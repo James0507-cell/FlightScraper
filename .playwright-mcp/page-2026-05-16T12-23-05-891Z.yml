@@ -1,0 +1,1068 @@
+- generic [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - button "Main menu" [ref=e6] [cursor=pointer]:
+          - img [ref=e7]
+        - link "Google" [ref=e11] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e13]:
+        - generic [ref=e15]:
+          - generic:
+            - button "Skip to main content" [ref=e16]:
+              - generic: Skip to main content
+            - button "Accessibility feedback" [ref=e19]:
+              - generic: Accessibility feedback
+          - navigation [ref=e23]:
+            - link "Travel" [ref=e26]:
+              - img [ref=e29]
+              - generic: Travel
+            - link "Explore" [ref=e35]:
+              - img [ref=e38]
+              - generic: Explore
+            - link "Flights" [ref=e43]:
+              - img [ref=e46]
+              - generic: Flights
+            - link "Hotels" [ref=e51]:
+              - img [ref=e54]
+              - generic: Hotels
+            - link "Vacation rentals" [ref=e62]:
+              - img [ref=e65]
+              - generic: Vacation rentals
+        - generic [ref=e79]:
+          - button "Change appearance" [ref=e81]:
+            - img
+          - tooltip [ref=e84]: Change appearance
+      - generic [ref=e86]:
+        - button "Google apps" [ref=e90] [cursor=pointer]:
+          - img [ref=e91]
+        - link "Sign in" [ref=e94] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=searchandassistant&passive=1209600&continue=https://www.google.com/travel/flights?q%3DFlights%2Bto%2BPAR%2Bfrom%2BLON%2Bon%2B2026-06-01%2Boneway&followup=https://www.google.com/travel/flights?q%3DFlights%2Bto%2BPAR%2Bfrom%2BLON%2Bon%2B2026-06-01%2Boneway&ec=GAZAlQM
+  - generic [ref=e102]:
+    - generic [ref=e104]:
+      - generic [ref=e105]: Loading results
+      - progressbar [ref=e106]
+    - generic [ref=e113]:
+      - search [ref=e114]:
+        - heading "Flight search" [level=1] [ref=e115]
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - combobox "Change ticket type. One way" [ref=e122] [cursor=pointer]:
+              - generic:
+                - img
+              - generic:
+                - generic: One way
+              - generic:
+                - img
+            - button "1 passenger, change number of passengers." [ref=e128]:
+              - generic [ref=e131]:
+                - img [ref=e132]
+                - generic [ref=e134]: "1"
+              - img [ref=e135]
+            - combobox "Change seating class. Economy" [ref=e141] [cursor=pointer]:
+              - generic:
+                - generic: Economy
+              - generic:
+                - img
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - generic [ref=e150]:
+                - combobox "Where from?" [ref=e151]: London
+                - generic [ref=e153]: London
+                - img [ref=e154]
+              - button "Swap origin and destination." [ref=e158] [cursor=pointer]:
+                - img [ref=e159]
+              - generic [ref=e166]:
+                - combobox "Where to?" [ref=e167]: Paris
+                - generic [ref=e169]: Paris
+                - img [ref=e170]
+            - generic [ref=e183]:
+              - img [ref=e185]
+              - textbox "Departure" [ref=e188]: Mon, Jun 1
+              - button [ref=e191]:
+                - img [ref=e194]
+              - button [ref=e198]:
+                - img [ref=e201]
+          - heading "Filters" [level=2] [ref=e204]
+          - generic [ref=e207]:
+            - button "All filters" [ref=e210]:
+              - img [ref=e213]
+              - generic [ref=e215]: All filters
+            - generic [ref=e218]:
+              - button "Stops, Not selected" [ref=e221]:
+                - generic [ref=e225]:
+                  - generic [ref=e226]: Stops
+                  - img [ref=e227]
+              - button "Airlines, Not selected" [ref=e231]:
+                - generic [ref=e235]:
+                  - generic [ref=e236]: Airlines
+                  - img [ref=e237]
+              - button "Bags, Not selected" [ref=e241]:
+                - generic [ref=e245]:
+                  - generic [ref=e246]: Bags
+                  - img [ref=e247]
+              - button "Price, Not selected" [ref=e251]:
+                - generic [ref=e255]:
+                  - generic [ref=e256]: Price
+                  - img [ref=e257]
+              - button "Times, Not selected" [ref=e261]:
+                - generic [ref=e265]:
+                  - generic [ref=e266]: Times
+                  - img [ref=e267]
+              - button "Emissions, Not selected" [ref=e271]:
+                - generic [ref=e275]:
+                  - generic [ref=e276]: Emissions
+                  - img [ref=e277]
+              - button "Connecting airports, Not selected" [ref=e281]:
+                - generic [ref=e285]:
+                  - generic [ref=e286]: Connecting airports
+                  - img [ref=e287]
+              - button "Duration, Not selected" [ref=e291]:
+                - generic [ref=e295]:
+                  - generic [ref=e296]: Duration
+                  - img [ref=e297]
+      - main [ref=e344]:
+        - heading "Search results" [level=2] [ref=e299]
+        - alert [ref=e345]: 27 results returned.
+        - generic [ref=e347]:
+          - tablist [ref=e348]:
+            - tab "BestLearn more about ranking" [selected] [ref=e349] [cursor=pointer]:
+              - generic [ref=e350]:
+                - text: Best
+                - button "Learn more about ranking" [ref=e356]:
+                  - img [ref=e358]
+            - tab "Cheapest from 2837 Philippine pesos Learn more about ranking" [ref=e1948] [cursor=pointer]:
+              - generic [ref=e361]:
+                - text: Cheapest
+                - generic [ref=e363]:
+                  - generic [ref=e364]:
+                    - text: from
+                    - generic [ref=e1949]: ₱2,837
+                  - button "Learn more about ranking" [ref=e387]:
+                    - img [ref=e389]
+          - tabpanel "BestLearn more about ranking" [ref=e391]:
+            - generic [ref=e392]:
+              - heading "Top options" [active] [level=3] [ref=e393]
+              - generic [ref=e394]:
+                - generic [ref=e395]:
+                  - text: Ranked based on price and convenience
+                  - button "Learn more about ranking" [ref=e399] [cursor=pointer]:
+                    - img [ref=e401]
+                  - text: Prices include required taxes + fees for 1 adult.
+                  - generic [ref=e403]:
+                    - text: Optional charges and
+                    - button "bag fees" [ref=e404] [cursor=pointer]
+                    - text: may apply.
+                    - generic [ref=e405]:
+                      - button "Passenger assistance" [ref=e406] [cursor=pointer]
+                      - text: info.
+                - button "Sorted by top flights, Change sort order." [ref=e411]:
+                  - generic [ref=e414]: Sorted by top flights
+                  - img [ref=e415]
+              - list [ref=e417]:
+                - listitem [ref=e418]:
+                  - generic [ref=e419]:
+                    - link "From 2956 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Gatwick Airport at 4:20 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 6:40 PM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e421] [cursor=pointer]:
+                      - generic [ref=e423]:
+                        - generic [ref=e425]:
+                          - generic "Leaves London Gatwick Airport at 4:20 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 6:40 PM on Monday, June 1." [ref=e427]:
+                            - 'generic "Departure time: 4:20 PM." [ref=e1952]': 4:20 PM
+                            - text: –
+                            - 'generic "Arrival time: 6:40 PM." [ref=e1955]': 6:40 PM
+                          - generic [ref=e434]: easyJet
+                        - generic [ref=e435]:
+                          - generic "Total duration 1 hr 20 min." [ref=e436]: 1 hr 20 min
+                          - generic [ref=e437]:
+                            - generic [ref=e1957]: LGW
+                            - text: –
+                            - generic [ref=e1959]: CDG
+                        - generic "Nonstop flight." [ref=e446]: Nonstop
+                        - generic [ref=e448]:
+                          - generic [ref=e450]: 55 kg CO2e
+                          - generic [ref=e451]:
+                            - generic [ref=e452]: Avg emissions
+                            - 'button "Carbon emissions estimate: 55 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e453]':
+                              - img [ref=e454]
+                        - generic [ref=e457]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e1962]:
+                            - img [ref=e1963]
+                          - generic [ref=e465]: ₱2,956
+                      - text: · ··
+                    - button "Flight details. Leaves London Gatwick Airport at 4:20 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 6:40 PM on Monday, June 1." [ref=e468] [cursor=pointer]:
+                      - img [ref=e471]
+                - listitem [ref=e473]:
+                  - generic [ref=e474]:
+                    - link "From 3284 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Southend Airport at 11:10 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 1:20 PM on Monday, June 1. Total duration 1 hr 10 min. Select flight"
+                    - generic [ref=e476] [cursor=pointer]:
+                      - generic [ref=e478]:
+                        - generic [ref=e480]:
+                          - generic "Leaves London Southend Airport at 11:10 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 1:20 PM on Monday, June 1." [ref=e482]:
+                            - 'generic "Departure time: 11:10 AM." [ref=e1968]': 11:10 AM
+                            - text: –
+                            - 'generic "Arrival time: 1:20 PM." [ref=e1971]': 1:20 PM
+                          - generic [ref=e489]: easyJet
+                        - generic [ref=e490]:
+                          - generic "Total duration 1 hr 10 min." [ref=e491]: 1 hr 10 min
+                          - generic [ref=e492]:
+                            - generic [ref=e1973]: SEN
+                            - text: –
+                            - generic [ref=e1975]: CDG
+                        - generic "Nonstop flight." [ref=e501]: Nonstop
+                        - generic [ref=e503]:
+                          - generic [ref=e505]: 57 kg CO2e
+                          - generic [ref=e506]:
+                            - generic [ref=e507]: Avg emissions
+                            - 'button "Carbon emissions estimate: 57 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e508]':
+                              - img [ref=e509]
+                        - generic [ref=e512]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e1978]:
+                            - img [ref=e1979]
+                          - generic [ref=e520]: ₱3,284
+                      - text: · ··
+                    - button "Flight details. Leaves London Southend Airport at 11:10 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 1:20 PM on Monday, June 1." [ref=e523]:
+                      - img [ref=e526]
+                - listitem [ref=e528]:
+                  - generic [ref=e529]:
+                    - link "From 3678 Philippine pesos.This price does not include overhead bin access. Nonstop flight with Vueling. Leaves Heathrow Airport at 3:00 PM on Monday, June 1 and arrives at Paris Orly Airport at 5:35 PM on Monday, June 1. Total duration 1 hr 35 min. Select flight"
+                    - generic [ref=e531] [cursor=pointer]:
+                      - generic [ref=e533]:
+                        - generic [ref=e535]:
+                          - generic "Leaves Heathrow Airport at 3:00 PM on Monday, June 1 and arrives at Paris Orly Airport at 5:35 PM on Monday, June 1." [ref=e537]:
+                            - 'generic "Departure time: 3:00 PM." [ref=e1984]': 3:00 PM
+                            - text: –
+                            - 'generic "Arrival time: 5:35 PM." [ref=e1987]': 5:35 PM
+                          - generic [ref=e544]:
+                            - text: Vueling
+                            - generic [ref=e545]: ·
+                            - text: Iberia
+                        - generic [ref=e546]:
+                          - generic "Total duration 1 hr 35 min." [ref=e547]: 1 hr 35 min
+                          - generic [ref=e548]:
+                            - generic [ref=e1989]: LHR
+                            - text: –
+                            - generic [ref=e1991]: ORY
+                        - generic "Nonstop flight." [ref=e557]: Nonstop
+                        - generic [ref=e559]:
+                          - generic [ref=e561]: 54 kg CO2e
+                          - generic [ref=e562]:
+                            - generic [ref=e563]: Avg emissions
+                            - 'button "Carbon emissions estimate: 54 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e564]':
+                              - img [ref=e565]
+                        - generic [ref=e568]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e1994]:
+                            - img [ref=e1995]
+                          - generic [ref=e576]: ₱3,678
+                      - text: · ·· ·
+                    - button "Flight details. Leaves Heathrow Airport at 3:00 PM on Monday, June 1 and arrives at Paris Orly Airport at 5:35 PM on Monday, June 1." [ref=e579]:
+                      - img [ref=e582]
+              - generic [ref=e584]:
+                - link "Trains to consider To arrive closer to your destination"
+                - generic [ref=e585] [cursor=pointer]:
+                  - generic [ref=e586]:
+                    - text: Trains to consider
+                    - button "Climate friendly" [ref=e587]:
+                      - img [ref=e589]
+                    - generic [ref=e592]: ·
+                    - text: To arrive closer to your destination
+                  - generic [ref=e593]:
+                    - img [ref=e595]
+                    - generic [ref=e597]:
+                      - generic [ref=e598]:
+                        - 'generic "Departure time: 10:31 AM." [ref=e2000]': 10:31 AM
+                        - text: –
+                        - 'generic "Arrival time: 1:53 PM." [ref=e2003]': 1:53 PM
+                      - generic [ref=e605]: St Pancras International – Gare du Nord
+                      - text: ·
+                    - generic [ref=e606]:
+                      - generic [ref=e607]: 2 hr 22 min
+                      - generic [ref=e608]: Direct
+                    - generic [ref=e609]:
+                      - generic [ref=e610]: ₱21,704
+                      - generic [ref=e611]: one way
+                    - link "See more train options" [ref=e613]:
+                      - img [ref=e614]
+                      - text: See more train options
+            - generic [ref=e620]:
+              - heading "Price insights" [level=3] [ref=e621]
+              - generic [ref=e622] [cursor=pointer]:
+                - generic [ref=e623]:
+                  - img [ref=e625]
+                  - heading "The cheapest time to book is usually earlier, about 1–4 months before takeoff" [level=4] [ref=e630]:
+                    - text: The cheapest time to book is usually earlier,
+                    - generic [ref=e631]:
+                      - text: about
+                      - generic [ref=e632]: 1–4 months
+                      - text: before takeoff
+                - heading "Prices are currently typical" [level=4] [ref=e638]
+                - generic [ref=e639]: View price history
+                - button "View price history" [ref=e641]:
+                  - img [ref=e644]
+            - region "Find the best price" [ref=e646]:
+              - generic [ref=e649]:
+                - img [ref=e650]
+                - heading "Track prices" [level=2] [ref=e652]
+                - button "Learn more about tracked prices" [ref=e656] [cursor=pointer]:
+                  - link "Learn more about tracked prices" [ref=e657]:
+                    - img [ref=e658]
+                - generic [ref=e660]: Track prices from London to Paris departing 2026-06-01
+                - generic [ref=e661]:
+                  - generic [ref=e663] [cursor=pointer]: Jun 1
+                  - switch "Track prices from London to Paris departing 2026-06-01" [ref=e666] [cursor=pointer]:
+                    - generic [ref=e671]:
+                      - img [ref=e672]
+                      - img [ref=e674]
+                - generic [ref=e677]: Track prices from London to Paris - Any dates
+                - generic [ref=e679]:
+                  - generic [ref=e680] [cursor=pointer]: Any dates
+                  - switch "Track prices from London to Paris - Any dates" [ref=e683] [cursor=pointer]:
+                    - generic [ref=e688]:
+                      - img [ref=e689]
+                      - img [ref=e691]
+              - generic [ref=e696]:
+                - button "Date grid" [ref=e698]:
+                  - img [ref=e700]
+                  - generic [ref=e707]: Date grid
+                - button "Price graph" [ref=e709]:
+                  - img [ref=e711]
+                  - generic [ref=e721]: Price graph
+            - generic [ref=e722]:
+              - heading "Other flights" [level=3] [ref=e723]
+              - list [ref=e724]:
+                - listitem [ref=e725]:
+                  - generic [ref=e726]:
+                    - link "From 2956 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Gatwick Airport at 6:15 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:35 PM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e728] [cursor=pointer]:
+                      - generic [ref=e730]:
+                        - generic [ref=e732]:
+                          - generic "Leaves London Gatwick Airport at 6:15 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:35 PM on Monday, June 1." [ref=e734]:
+                            - 'generic "Departure time: 6:15 PM." [ref=e2006]': 6:15 PM
+                            - text: –
+                            - 'generic "Arrival time: 8:35 PM." [ref=e2009]': 8:35 PM
+                          - generic [ref=e741]: easyJet
+                        - generic [ref=e742]:
+                          - generic "Total duration 1 hr 20 min." [ref=e743]: 1 hr 20 min
+                          - generic [ref=e744]:
+                            - generic [ref=e2011]: LGW
+                            - text: –
+                            - generic [ref=e2013]: CDG
+                        - generic "Nonstop flight." [ref=e753]: Nonstop
+                        - generic [ref=e755]:
+                          - generic [ref=e757]: 55 kg CO2e
+                          - generic [ref=e758]:
+                            - generic [ref=e759]: Avg emissions
+                            - 'button "Carbon emissions estimate: 55 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e760]':
+                              - img [ref=e761]
+                        - generic [ref=e764]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e2016]:
+                            - img [ref=e2017]
+                          - generic [ref=e772]: ₱2,956
+                      - text: · ··
+                    - button "Flight details. Leaves London Gatwick Airport at 6:15 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:35 PM on Monday, June 1." [ref=e775]:
+                      - img [ref=e778]
+                - listitem [ref=e780]:
+                  - generic [ref=e781]:
+                    - link "From 2956 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Gatwick Airport at 7:35 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 9:55 PM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e783] [cursor=pointer]:
+                      - generic [ref=e785]:
+                        - generic [ref=e787]:
+                          - generic "Leaves London Gatwick Airport at 7:35 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 9:55 PM on Monday, June 1." [ref=e789]:
+                            - 'generic "Departure time: 7:35 PM." [ref=e2022]': 7:35 PM
+                            - text: –
+                            - 'generic "Arrival time: 9:55 PM." [ref=e2025]': 9:55 PM
+                          - generic [ref=e796]: easyJet
+                        - generic [ref=e797]:
+                          - generic "Total duration 1 hr 20 min." [ref=e798]: 1 hr 20 min
+                          - generic [ref=e799]:
+                            - generic [ref=e2027]: LGW
+                            - text: –
+                            - generic [ref=e2029]: CDG
+                        - generic "Nonstop flight." [ref=e808]: Nonstop
+                        - generic [ref=e810]:
+                          - generic [ref=e812]: 55 kg CO2e
+                          - generic [ref=e813]:
+                            - generic [ref=e814]: Avg emissions
+                            - 'button "Carbon emissions estimate: 55 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e815]':
+                              - img [ref=e816]
+                        - generic [ref=e819]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e2032]:
+                            - img [ref=e2033]
+                          - generic [ref=e827]: ₱2,956
+                      - text: · ··
+                    - button "Flight details. Leaves London Gatwick Airport at 7:35 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 9:55 PM on Monday, June 1." [ref=e830]:
+                      - img [ref=e833]
+                - listitem [ref=e835]:
+                  - generic [ref=e836]:
+                    - link "From 2956 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Luton Airport at 7:40 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:00 PM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e838] [cursor=pointer]:
+                      - generic [ref=e840]:
+                        - generic [ref=e842]:
+                          - generic "Leaves London Luton Airport at 7:40 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:00 PM on Monday, June 1." [ref=e844]:
+                            - 'generic "Departure time: 7:40 PM." [ref=e2038]': 7:40 PM
+                            - text: –
+                            - 'generic "Arrival time: 10:00 PM." [ref=e2041]': 10:00 PM
+                          - generic [ref=e851]: easyJet
+                        - generic [ref=e852]:
+                          - generic "Total duration 1 hr 20 min." [ref=e853]: 1 hr 20 min
+                          - generic [ref=e854]:
+                            - generic [ref=e2043]: LTN
+                            - text: –
+                            - generic [ref=e2045]: CDG
+                        - generic "Nonstop flight." [ref=e863]: Nonstop
+                        - generic [ref=e865]:
+                          - generic [ref=e867]: 63 kg CO2e
+                          - generic [ref=e868]:
+                            - generic [ref=e869]: +13% emissions
+                            - 'button "Carbon emissions estimate: 63 kilograms. +13% emissions. Learn more about this emissions estimate" [ref=e870]':
+                              - img [ref=e871]
+                        - generic [ref=e874]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e2048]:
+                            - img [ref=e2049]
+                          - generic [ref=e882]: ₱2,956
+                      - text: · ··
+                    - button "Flight details. Leaves London Luton Airport at 7:40 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:00 PM on Monday, June 1." [ref=e885]:
+                      - img [ref=e888]
+                - listitem [ref=e890]:
+                  - generic [ref=e891]:
+                    - link "From 3202 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Stansted Airport at 3:35 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 5:45 PM on Monday, June 1. Total duration 1 hr 10 min. Select flight"
+                    - generic [ref=e893] [cursor=pointer]:
+                      - generic [ref=e895]:
+                        - generic [ref=e897]:
+                          - generic "Leaves London Stansted Airport at 3:35 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 5:45 PM on Monday, June 1." [ref=e899]:
+                            - 'generic "Departure time: 3:35 PM." [ref=e2054]': 3:35 PM
+                            - text: –
+                            - 'generic "Arrival time: 5:45 PM." [ref=e2057]': 5:45 PM
+                          - generic [ref=e906]: easyJet
+                        - generic [ref=e907]:
+                          - generic "Total duration 1 hr 10 min." [ref=e908]: 1 hr 10 min
+                          - generic [ref=e909]:
+                            - generic [ref=e2059]: STN
+                            - text: –
+                            - generic [ref=e2061]: CDG
+                        - generic "Nonstop flight." [ref=e918]: Nonstop
+                        - generic [ref=e920]:
+                          - generic [ref=e922]: 54 kg CO2e
+                          - generic [ref=e923]:
+                            - generic [ref=e924]: Avg emissions
+                            - 'button "Carbon emissions estimate: 54 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e925]':
+                              - img [ref=e926]
+                        - generic [ref=e929]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e2064]:
+                            - img [ref=e2065]
+                          - generic [ref=e937]: ₱3,202
+                      - text: · ··
+                    - button "Flight details. Leaves London Stansted Airport at 3:35 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 5:45 PM on Monday, June 1." [ref=e940]:
+                      - img [ref=e943]
+                - listitem [ref=e945]:
+                  - generic [ref=e946]:
+                    - link "From 3613 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Luton Airport at 6:05 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:30 AM on Monday, June 1. Total duration 1 hr 25 min. Select flight"
+                    - generic [ref=e948] [cursor=pointer]:
+                      - generic [ref=e950]:
+                        - generic [ref=e952]:
+                          - generic "Leaves London Luton Airport at 6:05 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:30 AM on Monday, June 1." [ref=e954]:
+                            - 'generic "Departure time: 6:05 AM." [ref=e2070]': 6:05 AM
+                            - text: –
+                            - 'generic "Arrival time: 8:30 AM." [ref=e2073]': 8:30 AM
+                          - generic [ref=e961]: easyJet
+                        - generic [ref=e962]:
+                          - generic "Total duration 1 hr 25 min." [ref=e963]: 1 hr 25 min
+                          - generic [ref=e964]:
+                            - generic [ref=e2075]: LTN
+                            - text: –
+                            - generic [ref=e2077]: CDG
+                        - generic "Nonstop flight." [ref=e973]: Nonstop
+                        - generic [ref=e975]:
+                          - generic [ref=e977]: 63 kg CO2e
+                          - generic [ref=e978]:
+                            - generic [ref=e979]: +13% emissions
+                            - 'button "Carbon emissions estimate: 63 kilograms. +13% emissions. Learn more about this emissions estimate" [ref=e980]':
+                              - img [ref=e981]
+                        - generic [ref=e984]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e2080]:
+                            - img [ref=e2081]
+                          - generic [ref=e992]: ₱3,613
+                      - text: · ··
+                    - button "Flight details. Leaves London Luton Airport at 6:05 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:30 AM on Monday, June 1." [ref=e995]:
+                      - img [ref=e998]
+                - listitem [ref=e1000]:
+                  - generic [ref=e1001]:
+                    - link "From 3613 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Luton Airport at 1:55 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 4:20 PM on Monday, June 1. Total duration 1 hr 25 min. Select flight"
+                    - generic [ref=e1003] [cursor=pointer]:
+                      - generic [ref=e1005]:
+                        - generic [ref=e1007]:
+                          - generic "Leaves London Luton Airport at 1:55 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 4:20 PM on Monday, June 1." [ref=e1009]:
+                            - 'generic "Departure time: 1:55 PM." [ref=e2086]': 1:55 PM
+                            - text: –
+                            - 'generic "Arrival time: 4:20 PM." [ref=e2089]': 4:20 PM
+                          - generic [ref=e1016]: easyJet
+                        - generic [ref=e1017]:
+                          - generic "Total duration 1 hr 25 min." [ref=e1018]: 1 hr 25 min
+                          - generic [ref=e1019]:
+                            - generic [ref=e2091]: LTN
+                            - text: –
+                            - generic [ref=e2093]: CDG
+                        - generic "Nonstop flight." [ref=e1028]: Nonstop
+                        - generic [ref=e1030]:
+                          - generic [ref=e1032]: 63 kg CO2e
+                          - generic [ref=e1033]:
+                            - generic [ref=e1034]: +13% emissions
+                            - 'button "Carbon emissions estimate: 63 kilograms. +13% emissions. Learn more about this emissions estimate" [ref=e1035]':
+                              - img [ref=e1036]
+                        - generic [ref=e1039]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e2096]:
+                            - img [ref=e2097]
+                          - generic [ref=e1047]: ₱3,613
+                      - text: · ··
+                    - button "Flight details. Leaves London Luton Airport at 1:55 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 4:20 PM on Monday, June 1." [ref=e1050]:
+                      - img [ref=e1053]
+                - listitem [ref=e1055]:
+                  - generic [ref=e1056]:
+                    - link "From 4434 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Luton Airport at 9:55 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 12:20 PM on Monday, June 1. Total duration 1 hr 25 min. Select flight"
+                    - generic [ref=e1058] [cursor=pointer]:
+                      - generic [ref=e1060]:
+                        - generic [ref=e1062]:
+                          - generic "Leaves London Luton Airport at 9:55 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 12:20 PM on Monday, June 1." [ref=e1064]:
+                            - 'generic "Departure time: 9:55 AM." [ref=e2102]': 9:55 AM
+                            - text: –
+                            - 'generic "Arrival time: 12:20 PM." [ref=e2105]': 12:20 PM
+                          - generic [ref=e1071]: easyJet
+                        - generic [ref=e1072]:
+                          - generic "Total duration 1 hr 25 min." [ref=e1073]: 1 hr 25 min
+                          - generic [ref=e1074]:
+                            - generic [ref=e2107]: LTN
+                            - text: –
+                            - generic [ref=e2109]: CDG
+                        - generic "Nonstop flight." [ref=e1083]: Nonstop
+                        - generic [ref=e1085]:
+                          - generic [ref=e1087]: 63 kg CO2e
+                          - generic [ref=e1088]:
+                            - generic [ref=e1089]: +13% emissions
+                            - 'button "Carbon emissions estimate: 63 kilograms. +13% emissions. Learn more about this emissions estimate" [ref=e1090]':
+                              - img [ref=e1091]
+                        - generic [ref=e1094]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e2112]:
+                            - img [ref=e2113]
+                          - generic [ref=e1102]: ₱4,434
+                      - text: · ··
+                    - button "Flight details. Leaves London Luton Airport at 9:55 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 12:20 PM on Monday, June 1." [ref=e1105]:
+                      - img [ref=e1108]
+                - listitem [ref=e1110]:
+                  - generic [ref=e1111]:
+                    - link "From 4680 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Gatwick Airport at 7:45 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:05 AM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e1113] [cursor=pointer]:
+                      - generic [ref=e1115]:
+                        - generic [ref=e1117]:
+                          - generic "Leaves London Gatwick Airport at 7:45 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:05 AM on Monday, June 1." [ref=e1119]:
+                            - 'generic "Departure time: 7:45 AM." [ref=e2118]': 7:45 AM
+                            - text: –
+                            - 'generic "Arrival time: 10:05 AM." [ref=e2121]': 10:05 AM
+                          - generic [ref=e1126]: easyJet
+                        - generic [ref=e1127]:
+                          - generic "Total duration 1 hr 20 min." [ref=e1128]: 1 hr 20 min
+                          - generic [ref=e1129]:
+                            - generic [ref=e2123]: LGW
+                            - text: –
+                            - generic [ref=e2125]: CDG
+                        - generic "Nonstop flight." [ref=e1138]: Nonstop
+                        - generic [ref=e1140]:
+                          - generic [ref=e1142]: 50 kg CO2e
+                          - generic [ref=e1143]:
+                            - generic [ref=e1144]: "-11% emissions"
+                            - 'button "Carbon emissions estimate: 50 kilograms. -11% emissions. Learn more about this emissions estimate" [ref=e1145]':
+                              - img [ref=e1146]
+                        - generic [ref=e1149]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e2128]:
+                            - img [ref=e2129]
+                          - generic [ref=e1157]: ₱4,680
+                      - text: · ··
+                    - button "Flight details. Leaves London Gatwick Airport at 7:45 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:05 AM on Monday, June 1." [ref=e1160]:
+                      - img [ref=e1163]
+                - listitem [ref=e1165]:
+                  - generic [ref=e1166]:
+                    - link "From 5419 Philippine pesos.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves London Gatwick Airport at 1:10 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 3:30 PM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e1168] [cursor=pointer]:
+                      - generic [ref=e1170]:
+                        - generic [ref=e1172]:
+                          - generic "Leaves London Gatwick Airport at 1:10 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 3:30 PM on Monday, June 1." [ref=e1174]:
+                            - 'generic "Departure time: 1:10 PM." [ref=e2134]': 1:10 PM
+                            - text: –
+                            - 'generic "Arrival time: 3:30 PM." [ref=e2137]': 3:30 PM
+                          - generic [ref=e1181]: easyJet
+                        - generic [ref=e1182]:
+                          - generic "Total duration 1 hr 20 min." [ref=e1183]: 1 hr 20 min
+                          - generic [ref=e1184]:
+                            - generic [ref=e2139]: LGW
+                            - text: –
+                            - generic [ref=e2141]: CDG
+                        - generic "Nonstop flight." [ref=e1193]: Nonstop
+                        - generic [ref=e1195]:
+                          - generic [ref=e1197]: 55 kg CO2e
+                          - generic [ref=e1198]:
+                            - generic [ref=e1199]: Avg emissions
+                            - 'button "Carbon emissions estimate: 55 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1200]':
+                              - img [ref=e1201]
+                        - generic [ref=e1204]:
+                          - button "This price for this flight doesn't include overhead bin access. If you need a carry-on bag, use the Bags filter to update prices." [ref=e2144]:
+                            - img [ref=e2145]
+                          - generic [ref=e1212]: ₱5,419
+                      - text: · ··
+                    - button "Flight details. Leaves London Gatwick Airport at 1:10 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 3:30 PM on Monday, June 1." [ref=e1215]:
+                      - img [ref=e1218]
+                - listitem [ref=e1220]:
+                  - generic [ref=e1221]:
+                    - link "From 6245 Philippine pesos. Nonstop flight with British Airways. Leaves Heathrow Airport at 8:45 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:55 PM on Monday, June 1. Total duration 1 hr 10 min. Select flight"
+                    - generic [ref=e1223] [cursor=pointer]:
+                      - generic [ref=e1225]:
+                        - generic [ref=e1227]:
+                          - generic "Leaves Heathrow Airport at 8:45 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:55 PM on Monday, June 1." [ref=e1229]:
+                            - 'generic "Departure time: 8:45 PM." [ref=e2150]': 8:45 PM
+                            - text: –
+                            - 'generic "Arrival time: 10:55 PM." [ref=e2153]': 10:55 PM
+                          - generic [ref=e1236]: British Airways
+                        - generic [ref=e1237]:
+                          - generic "Total duration 1 hr 10 min." [ref=e1238]: 1 hr 10 min
+                          - generic [ref=e1239]:
+                            - generic [ref=e2155]: LHR
+                            - text: –
+                            - generic [ref=e2157]: CDG
+                        - generic "Nonstop flight." [ref=e1248]: Nonstop
+                        - generic [ref=e1250]:
+                          - generic [ref=e1252]: 54 kg CO2e
+                          - generic [ref=e1253]:
+                            - generic [ref=e1254]: Avg emissions
+                            - 'button "Carbon emissions estimate: 54 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1255]':
+                              - img [ref=e1256]
+                        - generic [ref=e1260]: ₱6,245
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 8:45 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:55 PM on Monday, June 1." [ref=e1263]:
+                      - img [ref=e1266]
+                - listitem [ref=e1268]:
+                  - generic [ref=e1269]:
+                    - link "From 8100 Philippine pesos. Nonstop flight with Air France. Leaves London Gatwick Airport at 5:00 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 7:15 PM on Monday, June 1. Total duration 1 hr 15 min. Select flight"
+                    - generic [ref=e1271] [cursor=pointer]:
+                      - generic [ref=e1273]:
+                        - generic [ref=e1275]:
+                          - generic "Leaves London Gatwick Airport at 5:00 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 7:15 PM on Monday, June 1." [ref=e1277]:
+                            - 'generic "Departure time: 5:00 PM." [ref=e2160]': 5:00 PM
+                            - text: –
+                            - 'generic "Arrival time: 7:15 PM." [ref=e2163]': 7:15 PM
+                          - generic [ref=e1284]: Air France
+                        - generic [ref=e1285]:
+                          - generic "Total duration 1 hr 15 min." [ref=e1286]: 1 hr 15 min
+                          - generic [ref=e1287]:
+                            - generic [ref=e2165]: LGW
+                            - text: –
+                            - generic [ref=e2167]: CDG
+                        - generic "Nonstop flight." [ref=e1296]: Nonstop
+                        - generic [ref=e1298]:
+                          - generic [ref=e1300]: 54 kg CO2e
+                          - generic [ref=e1301]:
+                            - generic [ref=e1302]: Avg emissions
+                            - 'button "Carbon emissions estimate: 54 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1303]':
+                              - img [ref=e1304]
+                        - generic [ref=e1308]: ₱8,100
+                      - text: · ··
+                    - button "Flight details. Leaves London Gatwick Airport at 5:00 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 7:15 PM on Monday, June 1." [ref=e1311]:
+                      - img [ref=e1314]
+                - listitem [ref=e1316]:
+                  - generic [ref=e1317]:
+                    - link "From 8154 Philippine pesos. Nonstop flight with Air France. Leaves Heathrow Airport at 5:35 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 7:55 PM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e1319] [cursor=pointer]:
+                      - generic [ref=e1321]:
+                        - generic [ref=e1323]:
+                          - generic "Leaves Heathrow Airport at 5:35 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 7:55 PM on Monday, June 1." [ref=e1325]:
+                            - 'generic "Departure time: 5:35 PM." [ref=e2170]': 5:35 PM
+                            - text: –
+                            - 'generic "Arrival time: 7:55 PM." [ref=e2173]': 7:55 PM
+                          - generic [ref=e1332]: Air France
+                        - generic [ref=e1333]:
+                          - generic "Total duration 1 hr 20 min." [ref=e1334]: 1 hr 20 min
+                          - generic [ref=e1335]:
+                            - generic [ref=e2175]: LHR
+                            - text: –
+                            - generic [ref=e2177]: CDG
+                        - generic "Nonstop flight." [ref=e1344]: Nonstop
+                        - generic [ref=e1346]:
+                          - generic [ref=e1348]: 57 kg CO2e
+                          - generic [ref=e1349]:
+                            - generic [ref=e1350]: Avg emissions
+                            - 'button "Carbon emissions estimate: 57 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1351]':
+                              - img [ref=e1352]
+                        - generic [ref=e1356]: ₱8,154
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 5:35 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 7:55 PM on Monday, June 1." [ref=e1359]:
+                      - img [ref=e1362]
+                - listitem [ref=e1364]:
+                  - generic [ref=e1365]:
+                    - link "From 8154 Philippine pesos. Nonstop flight with Air France. Leaves Heathrow Airport at 7:45 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:00 PM on Monday, June 1. Total duration 1 hr 15 min. Select flight"
+                    - generic [ref=e1367] [cursor=pointer]:
+                      - generic [ref=e1369]:
+                        - generic [ref=e1371]:
+                          - generic "Leaves Heathrow Airport at 7:45 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:00 PM on Monday, June 1." [ref=e1373]:
+                            - 'generic "Departure time: 7:45 PM." [ref=e2180]': 7:45 PM
+                            - text: –
+                            - 'generic "Arrival time: 10:00 PM." [ref=e2183]': 10:00 PM
+                          - generic [ref=e1380]: Air France
+                        - generic [ref=e1381]:
+                          - generic "Total duration 1 hr 15 min." [ref=e1382]: 1 hr 15 min
+                          - generic [ref=e1383]:
+                            - generic [ref=e2185]: LHR
+                            - text: –
+                            - generic [ref=e2187]: CDG
+                        - generic "Nonstop flight." [ref=e1392]: Nonstop
+                        - generic [ref=e1394]:
+                          - generic [ref=e1396]: 57 kg CO2e
+                          - generic [ref=e1397]:
+                            - generic [ref=e1398]: Avg emissions
+                            - 'button "Carbon emissions estimate: 57 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1399]':
+                              - img [ref=e1400]
+                        - generic [ref=e1404]: ₱8,154
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 7:45 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 10:00 PM on Monday, June 1." [ref=e1407]:
+                      - img [ref=e1410]
+                - listitem [ref=e1412]:
+                  - generic [ref=e1413]:
+                    - link "From 8512 Philippine pesos. Nonstop flight with Air France. Leaves London Gatwick Airport at 10:25 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 12:40 PM on Monday, June 1. Total duration 1 hr 15 min. Select flight"
+                    - generic [ref=e1415] [cursor=pointer]:
+                      - generic [ref=e1417]:
+                        - generic [ref=e1419]:
+                          - generic "Leaves London Gatwick Airport at 10:25 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 12:40 PM on Monday, June 1." [ref=e1421]:
+                            - 'generic "Departure time: 10:25 AM." [ref=e2190]': 10:25 AM
+                            - text: –
+                            - 'generic "Arrival time: 12:40 PM." [ref=e2193]': 12:40 PM
+                          - generic [ref=e1428]: Air France
+                        - generic [ref=e1429]:
+                          - generic "Total duration 1 hr 15 min." [ref=e1430]: 1 hr 15 min
+                          - generic [ref=e1431]:
+                            - generic [ref=e2195]: LGW
+                            - text: –
+                            - generic [ref=e2197]: CDG
+                        - generic "Nonstop flight." [ref=e1440]: Nonstop
+                        - generic [ref=e1442]:
+                          - generic [ref=e1444]: 54 kg CO2e
+                          - generic [ref=e1445]:
+                            - generic [ref=e1446]: Avg emissions
+                            - 'button "Carbon emissions estimate: 54 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1447]':
+                              - img [ref=e1448]
+                        - generic [ref=e1452]: ₱8,512
+                      - text: · ··
+                    - button "Flight details. Leaves London Gatwick Airport at 10:25 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 12:40 PM on Monday, June 1." [ref=e1455]:
+                      - img [ref=e1458]
+                - listitem [ref=e1460]:
+                  - generic [ref=e1461]:
+                    - link "From 9797 Philippine pesos. Nonstop flight with Air France. Leaves Heathrow Airport at 6:15 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:40 AM on Monday, June 1. Total duration 1 hr 25 min. Select flight"
+                    - generic [ref=e1463] [cursor=pointer]:
+                      - generic [ref=e1465]:
+                        - generic [ref=e1467]:
+                          - generic "Leaves Heathrow Airport at 6:15 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:40 AM on Monday, June 1." [ref=e1469]:
+                            - 'generic "Departure time: 6:15 AM." [ref=e2200]': 6:15 AM
+                            - text: –
+                            - 'generic "Arrival time: 8:40 AM." [ref=e2203]': 8:40 AM
+                          - generic [ref=e1476]: Air France
+                        - generic [ref=e1477]:
+                          - generic "Total duration 1 hr 25 min." [ref=e1478]: 1 hr 25 min
+                          - generic [ref=e1479]:
+                            - generic [ref=e2205]: LHR
+                            - text: –
+                            - generic [ref=e2207]: CDG
+                        - generic "Nonstop flight." [ref=e1488]: Nonstop
+                        - generic [ref=e1490]:
+                          - generic [ref=e1492]: 57 kg CO2e
+                          - generic [ref=e1493]:
+                            - generic [ref=e1494]: Avg emissions
+                            - 'button "Carbon emissions estimate: 57 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1495]':
+                              - img [ref=e1496]
+                        - generic [ref=e1500]: ₱9,797
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 6:15 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:40 AM on Monday, June 1." [ref=e1503]:
+                      - img [ref=e1506]
+                - listitem [ref=e1508]:
+                  - generic [ref=e1509]:
+                    - link "From 9797 Philippine pesos. Nonstop flight with Air France. Leaves Heathrow Airport at 3:20 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 5:40 PM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e1511] [cursor=pointer]:
+                      - generic [ref=e1513]:
+                        - generic [ref=e1515]:
+                          - generic "Leaves Heathrow Airport at 3:20 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 5:40 PM on Monday, June 1." [ref=e1517]:
+                            - 'generic "Departure time: 3:20 PM." [ref=e2210]': 3:20 PM
+                            - text: –
+                            - 'generic "Arrival time: 5:40 PM." [ref=e2213]': 5:40 PM
+                          - generic [ref=e1524]: Air France
+                        - generic [ref=e1525]:
+                          - generic "Total duration 1 hr 20 min." [ref=e1526]: 1 hr 20 min
+                          - generic [ref=e1527]:
+                            - generic [ref=e2215]: LHR
+                            - text: –
+                            - generic [ref=e2217]: CDG
+                        - generic "Nonstop flight." [ref=e1536]: Nonstop
+                        - generic [ref=e1538]:
+                          - generic [ref=e1540]: 57 kg CO2e
+                          - generic [ref=e1541]:
+                            - generic [ref=e1542]: Avg emissions
+                            - 'button "Carbon emissions estimate: 57 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1543]':
+                              - img [ref=e1544]
+                        - generic [ref=e1548]: ₱9,797
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 3:20 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 5:40 PM on Monday, June 1." [ref=e1551]:
+                      - img [ref=e1554]
+                - listitem [ref=e1556]:
+                  - generic [ref=e1557]:
+                    - link "From 11090 Philippine pesos. Nonstop flight with British Airways. Leaves Heathrow Airport at 3:05 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 5:30 PM on Monday, June 1. Total duration 1 hr 25 min. Select flight"
+                    - generic [ref=e1559] [cursor=pointer]:
+                      - generic [ref=e1561]:
+                        - generic [ref=e1563]:
+                          - generic "Leaves Heathrow Airport at 3:05 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 5:30 PM on Monday, June 1." [ref=e1565]:
+                            - 'generic "Departure time: 3:05 PM." [ref=e2220]': 3:05 PM
+                            - text: –
+                            - 'generic "Arrival time: 5:30 PM." [ref=e2223]': 5:30 PM
+                          - generic [ref=e1572]: British Airways
+                        - generic [ref=e1573]:
+                          - generic "Total duration 1 hr 25 min." [ref=e1574]: 1 hr 25 min
+                          - generic [ref=e1575]:
+                            - generic [ref=e2225]: LHR
+                            - text: –
+                            - generic [ref=e2227]: CDG
+                        - generic "Nonstop flight." [ref=e1584]: Nonstop
+                        - generic [ref=e1586]:
+                          - generic [ref=e1588]: 54 kg CO2e
+                          - generic [ref=e1589]:
+                            - generic [ref=e1590]: Avg emissions
+                            - 'button "Carbon emissions estimate: 54 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1591]':
+                              - img [ref=e1592]
+                        - generic [ref=e1596]: ₱11,090
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 3:05 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 5:30 PM on Monday, June 1." [ref=e1599]:
+                      - img [ref=e1602]
+                - listitem [ref=e1604]:
+                  - generic [ref=e1605]:
+                    - link "From 12157 Philippine pesos. Nonstop flight with British Airways. Leaves Heathrow Airport at 7:20 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 9:35 AM on Monday, June 1. Total duration 1 hr 15 min. Select flight"
+                    - generic [ref=e1607] [cursor=pointer]:
+                      - generic [ref=e1609]:
+                        - generic [ref=e1611]:
+                          - generic "Leaves Heathrow Airport at 7:20 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 9:35 AM on Monday, June 1." [ref=e1613]:
+                            - 'generic "Departure time: 7:20 AM." [ref=e2230]': 7:20 AM
+                            - text: –
+                            - 'generic "Arrival time: 9:35 AM." [ref=e2233]': 9:35 AM
+                          - generic [ref=e1620]: British Airways
+                        - generic [ref=e1621]:
+                          - generic "Total duration 1 hr 15 min." [ref=e1622]: 1 hr 15 min
+                          - generic [ref=e1623]:
+                            - generic [ref=e2235]: LHR
+                            - text: –
+                            - generic [ref=e2237]: CDG
+                        - generic "Nonstop flight." [ref=e1632]: Nonstop
+                        - generic [ref=e1634]:
+                          - generic [ref=e1636]: 47 kg CO2e
+                          - generic [ref=e1637]:
+                            - generic [ref=e1638]: "-16% emissions"
+                            - 'button "Carbon emissions estimate: 47 kilograms. -16% emissions. Learn more about this emissions estimate" [ref=e1639]':
+                              - img [ref=e1640]
+                        - generic [ref=e1644]: ₱12,157
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 7:20 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 9:35 AM on Monday, June 1." [ref=e1647]:
+                      - img [ref=e1650]
+                - listitem [ref=e1652]:
+                  - generic [ref=e1653]:
+                    - link "From 12486 Philippine pesos. Nonstop flight with British Airways. Leaves Heathrow Airport at 12:50 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 3:10 PM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e1655] [cursor=pointer]:
+                      - generic [ref=e1657]:
+                        - generic [ref=e1659]:
+                          - generic "Leaves Heathrow Airport at 12:50 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 3:10 PM on Monday, June 1." [ref=e1661]:
+                            - 'generic "Departure time: 12:50 PM." [ref=e2240]': 12:50 PM
+                            - text: –
+                            - 'generic "Arrival time: 3:10 PM." [ref=e2243]': 3:10 PM
+                          - generic [ref=e1668]: British Airways
+                        - generic [ref=e1669]:
+                          - generic "Total duration 1 hr 20 min." [ref=e1670]: 1 hr 20 min
+                          - generic [ref=e1671]:
+                            - generic [ref=e2245]: LHR
+                            - text: –
+                            - generic [ref=e2247]: CDG
+                        - generic "Nonstop flight." [ref=e1680]: Nonstop
+                        - generic [ref=e1682]:
+                          - generic [ref=e1684]: 54 kg CO2e
+                          - generic [ref=e1685]:
+                            - generic [ref=e1686]: Avg emissions
+                            - 'button "Carbon emissions estimate: 54 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1687]':
+                              - img [ref=e1688]
+                        - generic [ref=e1692]: ₱12,486
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 12:50 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 3:10 PM on Monday, June 1." [ref=e1695]:
+                      - img [ref=e1698]
+                - listitem [ref=e1700]:
+                  - generic [ref=e1701]:
+                    - link "From 12978 Philippine pesos. Nonstop flight with British Airways. Leaves Heathrow Airport at 6:20 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:35 PM on Monday, June 1. Total duration 1 hr 15 min. Select flight"
+                    - generic [ref=e1703] [cursor=pointer]:
+                      - generic [ref=e1705]:
+                        - generic [ref=e1707]:
+                          - generic "Leaves Heathrow Airport at 6:20 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:35 PM on Monday, June 1." [ref=e1709]:
+                            - 'generic "Departure time: 6:20 PM." [ref=e2250]': 6:20 PM
+                            - text: –
+                            - 'generic "Arrival time: 8:35 PM." [ref=e2253]': 8:35 PM
+                          - generic [ref=e1716]: British Airways
+                        - generic [ref=e1717]:
+                          - generic "Total duration 1 hr 15 min." [ref=e1718]: 1 hr 15 min
+                          - generic [ref=e1719]:
+                            - generic [ref=e2255]: LHR
+                            - text: –
+                            - generic [ref=e2257]: CDG
+                        - generic "Nonstop flight." [ref=e1728]: Nonstop
+                        - generic [ref=e1730]:
+                          - generic [ref=e1732]: 43 kg CO2e
+                          - generic [ref=e1733]:
+                            - generic [ref=e1734]: "-23% emissions"
+                            - 'button "Carbon emissions estimate: 43 kilograms. -23% emissions. Learn more about this emissions estimate" [ref=e1735]':
+                              - img [ref=e1736]
+                        - generic [ref=e1740]: ₱12,978
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 6:20 PM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 8:35 PM on Monday, June 1." [ref=e1743]:
+                      - img [ref=e1746]
+                - listitem [ref=e1748]:
+                  - generic [ref=e1749]:
+                    - link "From 13655 Philippine pesos. Nonstop flight with Air France. Leaves Heathrow Airport at 8:55 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 11:15 AM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e1751] [cursor=pointer]:
+                      - generic [ref=e1753]:
+                        - generic [ref=e1755]:
+                          - generic "Leaves Heathrow Airport at 8:55 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 11:15 AM on Monday, June 1." [ref=e1757]:
+                            - 'generic "Departure time: 8:55 AM." [ref=e2260]': 8:55 AM
+                            - text: –
+                            - 'generic "Arrival time: 11:15 AM." [ref=e2263]': 11:15 AM
+                          - generic [ref=e1764]: Air France
+                        - generic [ref=e1765]:
+                          - generic "Total duration 1 hr 20 min." [ref=e1766]: 1 hr 20 min
+                          - generic [ref=e1767]:
+                            - generic [ref=e2265]: LHR
+                            - text: –
+                            - generic [ref=e2267]: CDG
+                        - generic "Nonstop flight." [ref=e1776]: Nonstop
+                        - generic [ref=e1778]:
+                          - generic [ref=e1780]: 57 kg CO2e
+                          - generic [ref=e1781]:
+                            - generic [ref=e1782]: Avg emissions
+                            - 'button "Carbon emissions estimate: 57 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1783]':
+                              - img [ref=e1784]
+                        - generic [ref=e1788]: ₱13,655
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 8:55 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 11:15 AM on Monday, June 1." [ref=e1791]:
+                      - img [ref=e1794]
+                - listitem [ref=e1796]:
+                  - generic [ref=e1797]:
+                    - link "From 14538 Philippine pesos. Nonstop flight with British Airways. Leaves Heathrow Airport at 11:45 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 2:05 PM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e1799] [cursor=pointer]:
+                      - generic [ref=e1801]:
+                        - generic [ref=e1803]:
+                          - generic "Leaves Heathrow Airport at 11:45 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 2:05 PM on Monday, June 1." [ref=e1805]:
+                            - 'generic "Departure time: 11:45 AM." [ref=e2270]': 11:45 AM
+                            - text: –
+                            - 'generic "Arrival time: 2:05 PM." [ref=e2273]': 2:05 PM
+                          - generic [ref=e1812]: British Airways
+                        - generic [ref=e1813]:
+                          - generic "Total duration 1 hr 20 min." [ref=e1814]: 1 hr 20 min
+                          - generic [ref=e1815]:
+                            - generic [ref=e2275]: LHR
+                            - text: –
+                            - generic [ref=e2277]: CDG
+                        - generic "Nonstop flight." [ref=e1824]: Nonstop
+                        - generic [ref=e1826]:
+                          - generic [ref=e1828]: 63 kg CO2e
+                          - generic [ref=e1829]:
+                            - generic [ref=e1830]: +13% emissions
+                            - 'button "Carbon emissions estimate: 63 kilograms. +13% emissions. Learn more about this emissions estimate" [ref=e1831]':
+                              - img [ref=e1832]
+                        - generic [ref=e1836]: ₱14,538
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 11:45 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 2:05 PM on Monday, June 1." [ref=e1839]:
+                      - img [ref=e1842]
+                - listitem [ref=e1844]:
+                  - generic [ref=e1845]:
+                    - link "From 20204 Philippine pesos. Nonstop flight with British Airways. Leaves Heathrow Airport at 8:45 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 11:00 AM on Monday, June 1. Total duration 1 hr 15 min. Select flight"
+                    - generic [ref=e1847] [cursor=pointer]:
+                      - generic [ref=e1849]:
+                        - generic [ref=e1851]:
+                          - generic "Leaves Heathrow Airport at 8:45 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 11:00 AM on Monday, June 1." [ref=e1853]:
+                            - 'generic "Departure time: 8:45 AM." [ref=e2280]': 8:45 AM
+                            - text: –
+                            - 'generic "Arrival time: 11:00 AM." [ref=e2283]': 11:00 AM
+                          - generic [ref=e1860]: British Airways
+                        - generic [ref=e1861]:
+                          - generic "Total duration 1 hr 15 min." [ref=e1862]: 1 hr 15 min
+                          - generic [ref=e1863]:
+                            - generic [ref=e2285]: LHR
+                            - text: –
+                            - generic [ref=e2287]: CDG
+                        - generic "Nonstop flight." [ref=e1872]: Nonstop
+                        - generic [ref=e1874]:
+                          - generic [ref=e1876]: 47 kg CO2e
+                          - generic [ref=e1877]:
+                            - generic [ref=e1878]: "-16% emissions"
+                            - 'button "Carbon emissions estimate: 47 kilograms. -16% emissions. Learn more about this emissions estimate" [ref=e1879]':
+                              - img [ref=e1880]
+                        - generic [ref=e1884]: ₱20,204
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 8:45 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 11:00 AM on Monday, June 1." [ref=e1887]:
+                      - img [ref=e1890]
+                - listitem [ref=e1892]:
+                  - generic [ref=e1893]:
+                    - link "From 24002 Philippine pesos. Nonstop flight with Air France. Leaves Heathrow Airport at 11:30 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 1:50 PM on Monday, June 1. Total duration 1 hr 20 min. Select flight"
+                    - generic [ref=e1895] [cursor=pointer]:
+                      - generic [ref=e1897]:
+                        - generic [ref=e1899]:
+                          - generic "Leaves Heathrow Airport at 11:30 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 1:50 PM on Monday, June 1." [ref=e1901]:
+                            - 'generic "Departure time: 11:30 AM." [ref=e2290]': 11:30 AM
+                            - text: –
+                            - 'generic "Arrival time: 1:50 PM." [ref=e2293]': 1:50 PM
+                          - generic [ref=e1908]: Air France
+                        - generic [ref=e1909]:
+                          - generic "Total duration 1 hr 20 min." [ref=e1910]: 1 hr 20 min
+                          - generic [ref=e1911]:
+                            - generic [ref=e2295]: LHR
+                            - text: –
+                            - generic [ref=e2297]: CDG
+                        - generic "Nonstop flight." [ref=e1920]: Nonstop
+                        - generic [ref=e1922]:
+                          - generic [ref=e1924]: 57 kg CO2e
+                          - generic [ref=e1925]:
+                            - generic [ref=e1926]: Avg emissions
+                            - 'button "Carbon emissions estimate: 57 kilograms. Average emissions. Learn more about this emissions estimate" [ref=e1927]':
+                              - img [ref=e1928]
+                        - generic [ref=e1932]: ₱24,002
+                      - text: · ··
+                    - button "Flight details. Leaves Heathrow Airport at 11:30 AM on Monday, June 1 and arrives at Paris Charles de Gaulle Airport at 1:50 PM on Monday, June 1." [ref=e1935]:
+                      - img [ref=e1938]
+                - listitem [ref=e1940]:
+                  - generic [ref=e1941] [cursor=pointer]:
+                    - button "View more flights" [ref=e1944]:
+                      - img
+                    - generic [ref=e1947]: View more flights
+          - text: · ·· · ·· · · ·· · · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ·· · ··
+      - contentinfo [ref=e303]:
+        - generic [ref=e305]:
+          - button "Language·English (United States)" [ref=e306]:
+            - img [ref=e309]
+            - generic [ref=e311]: Language·English (United States)
+          - button "Location·Philippines" [ref=e312]:
+            - img [ref=e315]
+            - generic [ref=e318]: Location·Philippines
+          - button "Currency PHP" [ref=e319]:
+            - img [ref=e322]
+            - generic [ref=e332]: Currency·PHP
+        - generic [ref=e333]:
+          - link "About Google Travel" [ref=e334] [cursor=pointer]:
+            - /url: https://about.google/?hl=en-US
+            - text: About
+          - link "Privacy" [ref=e335] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-US
+          - link "Terms" [ref=e336] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-US
+          - link "Join user studies" [ref=e337] [cursor=pointer]:
+            - /url: https://google.qualtrics.com/jfe/form/SV_3NMIMtX0F2zkakR?reserved%3D1%26utm_source%3DFooter%2520link%26utm_medium%3Down_web%26%20utm_campaign%3DQ2%26productTag%3D0%26campaignDate%3DApril2020%26referral_code%3DUXbJ377133&Q_Language=en-US
+          - link "Feedback" [ref=e338] [cursor=pointer]:
+            - /url: ./#0
+          - link "Help Center" [ref=e339] [cursor=pointer]:
+            - /url: https://support.google.com/travel/?hl=en-US#topic=2475360
+        - generic [ref=e340]:
+          - paragraph [ref=e341]:
+            - text: Displayed currencies may differ from the currencies used to purchase flights.
+            - link "Learn more about currencies" [ref=e342] [cursor=pointer]:
+              - /url: https://www.google.com/googlefinance/disclaimer?hl=en-US&gl=PH
+              - text: Learn more
+          - paragraph [ref=e343]: Prices are final prices and include all taxes and fees, including payment fees for the cheapest common payment method (which may differ depending on the provider). Additional charges may apply for other types of payment, luggage, meals, WLAN or other additional services. Prices, availability and travel details are provided based on the latest information received from our partners. This information is reflected in the results within a period of less than 24 hours. Additional conditions may also be applied by our partners. You should then check prices and conditions with the services providers before booking.

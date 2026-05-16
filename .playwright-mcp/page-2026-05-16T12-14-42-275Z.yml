@@ -1,0 +1,325 @@
+- generic [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - button "Main menu" [ref=e915] [cursor=pointer]:
+          - img [ref=e7]
+        - link "Google" [ref=e916] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e13]:
+        - generic [ref=e15]:
+          - generic:
+            - button "Skip to main content" [ref=e917]:
+              - generic: Skip to main content
+            - button "Accessibility feedback" [ref=e918]:
+              - generic: Accessibility feedback
+          - navigation [ref=e23]:
+            - link "Travel" [ref=e919]:
+              - img [ref=e29]
+              - generic: Travel
+            - link "Explore" [ref=e920]:
+              - img [ref=e38]
+              - generic: Explore
+            - link "Flights" [ref=e921]:
+              - img [ref=e46]
+              - generic: Flights
+            - link "Hotels" [ref=e922]:
+              - img [ref=e54]
+              - generic: Hotels
+            - link "Vacation rentals" [ref=e923]:
+              - img [ref=e65]
+              - generic: Vacation rentals
+        - generic [ref=e79]:
+          - button "Change appearance" [ref=e924]:
+            - img
+          - tooltip [ref=e84]: Change appearance
+      - generic [ref=e86]:
+        - button "Google apps" [ref=e925] [cursor=pointer]:
+          - img [ref=e91]
+        - link "Sign in" [ref=e926] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=searchandassistant&passive=1209600&continue=https%3A%2F%2Fwww.google.com%2Ftravel%2Fflights%3Ftfs%3DCBwQARocagwIAxIIL20vMDRqcGxyDAgDEggvbS8wNXF0ahocagwIAxIIL20vMDVxdGpyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEB%26tfu%3DKgIIAw%26utm_source%3Dsign_in_ogb&followup=https%3A%2F%2Fwww.google.com%2Ftravel%2Fflights%3Ftfs%3DCBwQARocagwIAxIIL20vMDRqcGxyDAgDEggvbS8wNXF0ahocagwIAxIIL20vMDVxdGpyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEB%26tfu%3DKgIIAw%26utm_source%3Dsign_in_ogb&ec=GAZAlQM
+  - generic [ref=e102]:
+    - heading "Flights" [level=1] [ref=e927]
+    - generic [ref=e106]:
+      - search "Flight" [ref=e108]:
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - combobox "Change ticket type. Round trip" [ref=e928] [cursor=pointer]:
+              - generic:
+                - img
+              - generic:
+                - generic: Round trip
+              - generic:
+                - img
+            - button "1 passenger" [ref=e929]:
+              - generic [ref=e125]:
+                - img [ref=e126]
+                - generic [ref=e128]: "1"
+              - img [ref=e129]
+            - combobox "Change seating class. Economy" [ref=e930] [cursor=pointer]:
+              - generic:
+                - generic: Economy
+              - generic:
+                - img
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - generic [ref=e144]:
+                - combobox "Where from?" [ref=e931]: London
+                - generic [ref=e682]: London
+                - img [ref=e148]
+              - button "Swap origin and destination." [ref=e932] [cursor=pointer]:
+                - img [ref=e933]
+              - generic [ref=e157]:
+                - combobox "Where to?" [active] [ref=e935]: Paris
+                - generic [ref=e937]: Paris
+                - img [ref=e159]
+            - generic [ref=e170]:
+              - generic [ref=e172]:
+                - img [ref=e174]
+                - textbox "Departure" [ref=e938]
+              - textbox "Return" [ref=e939]
+        - button "Search" [ref=e940]:
+          - img [ref=e188]
+          - generic [ref=e190]: Search
+      - main [ref=e191]:
+        - generic [ref=e192]:
+          - generic [ref=e194]:
+            - img [ref=e195]
+            - generic [ref=e197]:
+              - heading "Flexible? Discover the best flight deals with AI" [level=2] [ref=e941]
+              - generic [ref=e200]: Describe your ideal trip, and let Google Flights find the best deals for you
+            - button "Explore deals with AI" [ref=e942]:
+              - generic [ref=e205]: Explore deals with AI
+          - heading "Find and book cheap flights worldwide and track prices" [level=1] [ref=e943]
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - heading "Find cheap flights from Philippines to anywhere" [level=2] [ref=e944]
+              - button "Learn more about this section" [ref=e945] [cursor=pointer]:
+                - img [ref=e214]
+            - generic [ref=e216]:
+              - tablist [ref=e220]:
+                - tab "Davao City" [selected] [ref=e946] [cursor=pointer]
+                - tab "Manila" [ref=e947] [cursor=pointer]
+                - tab "Cebu City" [ref=e948] [cursor=pointer]
+                - tab "Iloilo City" [ref=e949] [cursor=pointer]
+              - list [ref=e225]:
+                - listitem [ref=e226]:
+                  - button "Find flights from Davao City (DVO) to Manila (MNL) from ₱6,177. Operated by Cebu Pacific. Jul 2 to Jul 8. Nonstop" [ref=e950] [cursor=pointer]:
+                    - generic [ref=e228]:
+                      - generic [ref=e229]: Davao City
+                      - img [ref=e230]
+                      - generic [ref=e232]: Manila
+                    - generic [ref=e233]:
+                      - generic [ref=e234]: Jul 2 — Jul 8
+                      - generic [ref=e235]:
+                        - generic [ref=e236]: ·
+                        - text: Nonstop
+                    - generic [ref=e237]:
+                      - generic [ref=e238]: from ₱6,177
+                      - img [ref=e240]
+                - listitem [ref=e242]:
+                  - button "Find flights from Davao City (DVO) to Cebu City (CEB) from ₱4,067. Operated by Cebu Pacific. May 28 to Jun 3. Nonstop" [ref=e951] [cursor=pointer]:
+                    - generic [ref=e244]:
+                      - generic [ref=e245]: Davao City
+                      - img [ref=e246]
+                      - generic [ref=e248]: Cebu City
+                    - generic [ref=e249]:
+                      - generic [ref=e250]: May 28 — Jun 3
+                      - generic [ref=e251]:
+                        - generic [ref=e252]: ·
+                        - text: Nonstop
+                    - generic [ref=e253]:
+                      - generic [ref=e254]: from ₱4,067
+                      - img [ref=e256]
+                - listitem [ref=e258]:
+                  - button "Find flights from Davao City (DVO) to Cagayan De Oro City (CGY) from ₱17,790. Operated by Cebu Pacific. May 17 to May 23. 1 stop" [ref=e952] [cursor=pointer]:
+                    - generic [ref=e260]:
+                      - generic [ref=e261]: Davao City
+                      - img [ref=e262]
+                      - generic [ref=e264]: Cagayan De Oro City
+                    - generic [ref=e265]:
+                      - generic [ref=e266]: May 17 — May 23
+                      - generic [ref=e267]:
+                        - generic [ref=e268]: ·
+                        - text: 1 stop
+                    - generic [ref=e269]:
+                      - generic [ref=e270]: from ₱17,790
+                      - img [ref=e272]
+                - text: · · · · · · · · ·
+              - generic [ref=e274]:
+                - button "Explore more destinations from Davao City" [ref=e953] [cursor=pointer]
+                - button [ref=e276]:
+                  - generic [ref=e279]: Explore destinations
+          - generic [ref=e280]:
+            - heading "Useful tools to help you find the best airline tickets" [level=2] [ref=e954]
+            - generic [ref=e282]:
+              - tablist [ref=e283]:
+                - tab "Find the cheapest days to fly The Date grid and Price graph make it easy to find the best flight deals" [selected] [ref=e955] [cursor=pointer]:
+                  - generic [ref=e285]:
+                    - img [ref=e286]
+                    - generic [ref=e288]:
+                      - generic [ref=e289]: Find the cheapest days to fly
+                      - generic [ref=e290]: The Date grid and Price graph make it easy to find the best flight deals
+                - tab "Know when to book with price insights Price history and trend data show you the best time to book your airline ticket to get the cheapest price for your flight" [ref=e956] [cursor=pointer]:
+                  - generic [ref=e292]:
+                    - img [ref=e293]
+                    - generic [ref=e295]:
+                      - generic [ref=e296]: Know when to book with price insights
+                      - generic [ref=e297]: Price history and trend data show you the best time to book your airline ticket to get the cheapest price for your flight
+                - tab "Track flight prices for a trip Not ready to book yet? Observe price changes for a route or flight and get notified when prices drop." [ref=e957] [cursor=pointer]:
+                  - generic [ref=e299]:
+                    - img [ref=e300]
+                    - generic [ref=e303]:
+                      - generic [ref=e304]: Track flight prices for a trip
+                      - generic [ref=e305]: Not ready to book yet? Observe price changes for a route or flight and get notified when prices drop.
+                - tab "Explore the best flight deals with AI Describe your ideal trip and let Google Flights find you the best deals" [ref=e958] [cursor=pointer]:
+                  - generic [ref=e307]:
+                    - img [ref=e308]
+                    - generic [ref=e310]:
+                      - generic [ref=e311]: Explore the best flight deals with AI
+                      - generic [ref=e312]: Describe your ideal trip and let Google Flights find you the best deals
+              - tabpanel "Find the cheapest days to fly The Date grid and Price graph make it easy to find the best flight deals" [ref=e959]:
+                - generic [ref=e314]: Insightful tools help you choose your trip dates
+                - generic [ref=e315]: If your travel plans are flexible, use the form above to start searching for a specific trip. Then, play around with the Date grid and Price graph options on the Search page to find the cheapest days to fly and book your tickets.
+          - generic [ref=e317]:
+            - heading "Popular flight destinations from Philippines" [level=2] [ref=e960]
+            - generic [ref=e321]:
+              - link "City image for Cebu City Cebu City" [ref=e961] [cursor=pointer]:
+                - /url: https://www.google.com/travel/flights/flights-to-cebu-city.html
+                - img "City image for Cebu City" [ref=e962]
+                - generic [ref=e326]: Cebu City
+              - link "City image for Manila Manila" [ref=e963] [cursor=pointer]:
+                - /url: https://www.google.com/travel/flights/flights-to-manila.html
+                - img "City image for Manila" [ref=e964]
+                - generic [ref=e331]: Manila
+              - link "City image for Bangkok Bangkok" [ref=e965] [cursor=pointer]:
+                - /url: https://www.google.com/travel/flights/flights-to-bangkok.html
+                - img "City image for Bangkok" [ref=e966]
+                - generic [ref=e336]: Bangkok
+              - link "City image for Davao City Davao City" [ref=e967] [cursor=pointer]:
+                - /url: https://www.google.com/travel/flights/flights-to-davao-city.html
+                - img "City image for Davao City" [ref=e968]
+                - generic [ref=e341]: Davao City
+              - link "City image for Hong Kong Hong Kong" [ref=e969] [cursor=pointer]:
+                - /url: https://www.google.com/travel/flights/flights-to-hong-kong.html
+                - img "City image for Hong Kong" [ref=e970]
+                - generic [ref=e346]: Hong Kong
+              - link "City image for Taipei City Taipei City" [ref=e971] [cursor=pointer]:
+                - /url: https://www.google.com/travel/flights/flights-to-taipei-city.html
+                - img "City image for Taipei City" [ref=e972]
+                - generic [ref=e351]: Taipei City
+              - link "City image for Tokyo Tokyo" [ref=e973] [cursor=pointer]:
+                - /url: https://www.google.com/travel/flights/flights-to-tokyo.html
+                - img "City image for Tokyo" [ref=e974]
+                - generic [ref=e356]: Tokyo
+              - link "City image for Iloilo City Iloilo City" [ref=e975] [cursor=pointer]:
+                - /url: https://www.google.com/travel/flights/flights-to-iloilo-city.html
+                - img "City image for Iloilo City" [ref=e976]
+                - generic [ref=e361]: Iloilo City
+              - link "City image for Caticlan Caticlan" [ref=e977] [cursor=pointer]:
+                - /url: https://www.google.com/travel/flights/flights-to-caticlan.html
+                - img "City image for Caticlan" [ref=e978]
+                - generic [ref=e366]: Caticlan
+              - link "City image for Singapore Singapore" [ref=e979] [cursor=pointer]:
+                - /url: https://www.google.com/travel/flights/flights-to-singapore.html
+                - img "City image for Singapore" [ref=e980]
+                - generic [ref=e371]: Singapore
+          - generic [ref=e372]:
+            - heading "Frequently asked questions" [level=2] [ref=e981]
+            - group "Frequently asked questions" [ref=e982]:
+              - generic [ref=e377] [cursor=pointer]:
+                - generic [ref=e378]: What are some good flight destinations from Philippines?
+                - button "What are some good flight destinations from Philippines?" [ref=e983]:
+                  - img [ref=e384]
+              - generic [ref=e387] [cursor=pointer]:
+                - generic [ref=e388]: How can I find last-minute flight deals?
+                - button "How can I find last-minute flight deals?" [ref=e984]:
+                  - img [ref=e394]
+              - generic [ref=e397] [cursor=pointer]:
+                - generic [ref=e398]: How can I find cheap flights for a weekend getaway?
+                - button "How can I find cheap flights for a weekend getaway?" [ref=e985]:
+                  - img [ref=e404]
+              - generic [ref=e407] [cursor=pointer]:
+                - generic [ref=e408]: How can I find flight deals if my travel plans are flexible?
+                - button "How can I find flight deals if my travel plans are flexible?" [ref=e986]:
+                  - img [ref=e414]
+              - generic [ref=e417] [cursor=pointer]:
+                - generic [ref=e418]: How can I find cheap flights to anywhere?
+                - button "How can I find cheap flights to anywhere?" [ref=e987]:
+                  - img [ref=e424]
+              - generic [ref=e427] [cursor=pointer]:
+                - generic [ref=e428]: How can I get flight alerts for my trip?
+                - button "How can I get flight alerts for my trip?" [ref=e988]:
+                  - img [ref=e434]
+          - heading "Search more flights" [level=2] [ref=e989]
+          - generic [ref=e437]:
+            - heading "Find cheap flights on popular routes" [level=3] [ref=e990]
+            - generic [ref=e440]:
+              - tablist [ref=e441]:
+                - generic [ref=e444]:
+                  - tab "Flights from cities in Philippines" [selected] [ref=e991] [cursor=pointer]:
+                    - generic:
+                      - generic: Flights from cities in Philippines
+                  - tab "International flights from Philippines" [ref=e992] [cursor=pointer]:
+                    - generic:
+                      - generic: International flights from Philippines
+                  - tab "Domestic flights in Philippines" [ref=e993] [cursor=pointer]:
+                    - generic:
+                      - generic: Domestic flights in Philippines
+              - tabpanel "Flights from cities in Philippines" [ref=e994]:
+                - generic [ref=e457]:
+                  - link "Flights from Manila" [ref=e995] [cursor=pointer]:
+                    - /url: https://www.google.com/travel/flights/flights-from-manila.html
+                  - link "Flights from Cebu City" [ref=e996] [cursor=pointer]:
+                    - /url: https://www.google.com/travel/flights/flights-from-cebu-city.html
+                  - link "Flights from Angeles" [ref=e997] [cursor=pointer]:
+                    - /url: https://www.google.com/travel/flights/flights-from-angeles.html
+                  - link "Flights from Davao City" [ref=e998] [cursor=pointer]:
+                    - /url: https://www.google.com/travel/flights/flights-from-davao-city.html
+                  - link "Flights from Iloilo City" [ref=e999] [cursor=pointer]:
+                    - /url: https://www.google.com/travel/flights/flights-from-iloilo-city.html
+                  - link "Flights from Bacolod" [ref=e1000] [cursor=pointer]:
+                    - /url: https://www.google.com/travel/flights/flights-from-bacolod.html
+      - contentinfo [ref=e466]:
+        - generic [ref=e468]:
+          - button "Language·English (United States)" [ref=e1001]:
+            - img [ref=e472]
+            - generic [ref=e474]: Language·English (United States)
+          - button "Location·Philippines" [ref=e1002]:
+            - img [ref=e478]
+            - generic [ref=e481]: Location·Philippines
+          - button "Currency PHP" [ref=e1003]:
+            - img [ref=e485]
+            - generic [ref=e495]: Currency·PHP
+        - generic [ref=e496]:
+          - paragraph [ref=e497]: "Current language and currency options applied: English (United States) - Philippines - PHP"
+          - paragraph [ref=e498]:
+            - text: Displayed currencies may differ from the currencies used to purchase flights.
+            - link "Learn more about currencies" [ref=e1004] [cursor=pointer]:
+              - /url: https://www.google.com/googlefinance/disclaimer?hl=en-US&gl=PH
+              - text: Learn more
+          - paragraph [ref=e500]: Prices are final prices and include all taxes and fees, including payment fees for the cheapest common payment method (which may differ depending on the provider). Additional charges may apply for other types of payment, luggage, meals, WLAN or other additional services. Prices, availability and travel details are provided based on the latest information received from our partners. This information is reflected in the results within a period of less than 24 hours. Additional conditions may also be applied by our partners. You should then check prices and conditions with the services providers before booking.
+        - generic [ref=e501]:
+          - link "About Google Travel" [ref=e1005] [cursor=pointer]:
+            - /url: https://about.google/?hl=en-US
+            - text: About
+          - link "Privacy" [ref=e1006] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-US
+          - link "Terms" [ref=e1007] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-US
+          - link "Join user studies" [ref=e1008] [cursor=pointer]:
+            - /url: https://google.qualtrics.com/jfe/form/SV_3NMIMtX0F2zkakR?reserved%3D1%26utm_source%3DFooter%2520link%26utm_medium%3Down_web%26%20utm_campaign%3DQ2%26productTag%3D0%26campaignDate%3DApril2020%26referral_code%3DUXbJ377133&Q_Language=en-US
+          - link "Feedback" [ref=e1009] [cursor=pointer]:
+            - /url: ./#0
+          - link "Help Center" [ref=e1010] [cursor=pointer]:
+            - /url: https://support.google.com/travel/?hl=en-US#topic=2475360
+        - generic [ref=e509]:
+          - generic [ref=e513]:
+            - generic [ref=e514] [cursor=pointer]: International sites
+            - button "International sites" [ref=e1011]:
+              - img [ref=e520]
+          - generic [ref=e525]:
+            - generic [ref=e526] [cursor=pointer]: Explore flights
+            - button "Explore flights" [ref=e1012]:
+              - img [ref=e532]
+  - generic [ref=e1013]: Use left or right arrow to toggle nearby location suggestions.

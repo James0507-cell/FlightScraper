@@ -1,0 +1,369 @@
+[
+  {
+    "airline": "easyJet",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+    "price": "₱2955",
+    "duration": "1 hr 20 min",
+    "departure": {
+      "time": "4:20 PM",
+      "airport": "London Gatwick Airport (LGW)"
+    },
+    "landing": {
+      "time": "6:40 PM",
+      "airport": "Paris Charles de Gaulle Airport (CDG)"
+    },
+    "emissions": {
+      "amount": "Not available",
+      "comparison": "Typical",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [],
+    "baggage": [
+      "Checked baggage for a fee"
+    ],
+    "flight_info": [
+      "Airbus A319",
+      "8405"
+    ],
+    "booking_options": [
+      {
+        "provider": "easyJet",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+        "url": "https://www.google.com/travel/clk/f?t=1778860800000",
+        "full_info": "Continue to book with easyJet airline for 2955 Philippine pesos (Equivalent to 36 British pounds on easyJet)"
+      }
+    ]
+  },
+  {
+    "airline": "easyJet",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+    "price": "₱3284",
+    "duration": "1 hr 10 min",
+    "departure": {
+      "time": "11:10 AM",
+      "airport": "London Southend Airport (SEN)"
+    },
+    "landing": {
+      "time": "1:20 PM",
+      "airport": "Paris Charles de Gaulle Airport (CDG)"
+    },
+    "emissions": {
+      "amount": "Not available",
+      "comparison": "Typical",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [],
+    "baggage": [
+      "Checked baggage for a fee"
+    ],
+    "flight_info": [
+      "Airbus A319",
+      "4662"
+    ],
+    "booking_options": [
+      {
+        "provider": "easyJet",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+        "url": "https://www.easyjet.com/en/buy/flights?utm_source=google&utm_medium=flight_search&utm_campaign=PH_SENCDG&gclid=ADowPOJso2IHNUUBo_Vf_EQc-7bRlKxUuRRK0JABZKXdDmNFWOwiKJ2-8KPy8ZS6qTORN2qhChUBBkMHu-zn_5yDpBqrXATBucicDpypVbdQYE9beRQ&gclsrc=gf",
+        "full_info": "Continue to book with easyJet airline for 3283 Philippine pesos (Equivalent to 40 British pounds on easyJet)"
+      }
+    ]
+  },
+  {
+    "airline": "Vueling",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+    "price": "₱3677",
+    "duration": "1 hr 35 min",
+    "departure": {
+      "time": "3:00 PM",
+      "airport": "Heathrow Airport (LHR)"
+    },
+    "landing": {
+      "time": "5:35 PM",
+      "airport": "Paris Orly Airport (ORY)"
+    },
+    "emissions": {
+      "amount": "Not available",
+      "comparison": "Typical",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [
+      "Below average legroom (29 in)",
+      "Wi-Fi for a fee",
+      "In-seat USB outlet",
+      "Stream media to your device"
+    ],
+    "baggage": [
+      "Checked baggage for a fee"
+    ],
+    "flight_info": [
+      "Airbus A320",
+      "8961"
+    ],
+    "booking_options": [
+      {
+        "provider": "Vueling",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+        "url": "https://tickets.vueling.com/booking?o=LHR&d=ORY&dd=2026-06-01&adt=1&chd=0&inf=0&dt=0&ofn=VY8961&utm_source=GFL&utm_campaign=google_flights_gfl_alwon_ph_en_pro_p_all_na_core_img_des&utm_medium=google_flights&utm_content=All&GFL=GFL1001&c=en-GB&cur=GBP&tpr=44.78&gclid=ADowPOKloqFJNUkY6vSrkKO87zKDbJz-xcm9brg7ZEfWI5QSZ2bt8lF3H-kXSeo_YyQZeuOqnN3u6hyV2WMUk7HSa_7utMykdkJcwkK_w_cAvaW8wIs&gclsrc=gf",
+        "full_info": "Continue to book with Vueling airline for 3676 Philippine pesos (Equivalent to 45 British pounds on Vueling)"
+      },
+      {
+        "provider": "Iberia",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=www.iberia.com&sz=64",
+        "url": "https://www.iberia.com/flights/?market=GB&Adult=1&PointOfSaleCountry=GB&UserCurrency=GBP&DisplayedPrice=75.05&DisplayedPriceCurrency=GBP&UserLanguage=en&TripType=OneWay&Slice1=1&Cabin1=Economy&Carrier1=IB&DepartureDate1=2026-06-01&Origin1=LHR&Destination1=ORY&FlightNumber1=5992&FareCode1=OOLMVY&BookingCode1=O&utm_campaign=PH.always_on&utm_medium=metasearch&utm_source=GFS&ReferralId=GoogleFlightSearch&etf-publisher=GFS-core&etf-prdref=flight&etf-name=GFS-core-PH.always_on&gclid=ADowPOKUH74J_AlX7rkRbX1RvF4QUbxmtTs5Y0vGzdB7svLTLT0Ht8SYdeaRdx5QjNvZ4rq2Qh1AKamDp7lBsthoD4C1MsUDgbQDXME0_yvJNqXJVOI&gclsrc=gf",
+        "full_info": "Continue to book with Iberia airline for 6161 Philippine pesos (Equivalent to 76 British pounds on Iberia)"
+      },
+      {
+        "provider": "OOJO",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=www.oojo.com&sz=64",
+        "url": "https://www.oojo.com/en-GB/bookingLink?Adult=1&PointOfSaleCountry=GB&DisplayedPrice=72.05&DisplayedPriceCurrency=GBP&UserLanguage=en&UserCurrency=GBP&TripType=OneWay&Slice1=1&Cabin1=E&Carrier1=IB&DepartureDate1=2026-06-01&Origin1=LHR&Departure1=LHR&Destination1=ORY&DepartureTime1=15:00&FlightNumber1=5992&DestinationDate1=2026-06-01&DestinationTime1=17:35&BookingCode1=O&ReferralId=0bea5247-3ac3-49a8-9217-702b7c4f7862&t=1778943290&sig=ATDLoPeg-2MCSmKxHh_4KfdRyPUbx9LOzPyXj6UheY7mi3V13y5J6noflre_TtQ1j2lGB8SpOZdkYZzESqM8u-H3au8dmHHtfy7xvRUzTmMuNASOSt_5Nn0-tPx0p-Sv6vpPDUVXmztibJQeoHAvYyAJPjjSHIbvf5khTfBoMQkvGjO02sDzlYdlHGCZ8_PVTjwgpw0gKbC2gPDxNQT92TKrpsehSU162rRrO1Rn4DSUPiENYuic-kfrpyEr3yJ26VpEQjUirvk4BycVhDwCCEGy8xoy_1-FleMgfORJ1esYdfViXTPHwnfsJ5Et7IfN4MzsXjuLUvUjLlA9oWsIMgc0qVjHgfL-c7npBFYtehsi9bJUVadLbwoZThP9x080gMnBl1h3e-3yeLR97QMUfK8IB4r3yAWmNX4XmwQ5UXf5ccagmQRL1x00I-ecDdonPtSgNSJtNUHaajjLulsqiLWJ-aTJTqEeKjR6NySM-ApJEzK76XU93Bs4dfLT_0luh5YQSXY%3D&gclid=ADowPOIixDkoPi4qBinJT5ZjfTHl8nU6uCLSp2Uqa1XAGrN5uqlFgVQfH6G94Vtd0MiF3u4n13HoDmTzAtBYjtJH5uKzNbvFCyIY7GPWyxTmKFWo8dth&gclsrc=gf",
+        "full_info": "Continue to book with OOJO for 5915 Philippine pesos (Equivalent to 73 British pounds on OOJO)"
+      }
+    ]
+  },
+  {
+    "airline": "easyJet",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+    "price": "₱2955",
+    "duration": "1 hr 20 min",
+    "departure": {
+      "time": "6:15 PM",
+      "airport": "London Gatwick Airport (LGW)"
+    },
+    "landing": {
+      "time": "8:35 PM",
+      "airport": "Paris Charles de Gaulle Airport (CDG)"
+    },
+    "emissions": {
+      "amount": "Not available",
+      "comparison": "Typical",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [],
+    "baggage": [
+      "Checked baggage for a fee"
+    ],
+    "flight_info": [
+      "Airbus A319",
+      "8407"
+    ],
+    "booking_options": [
+      {
+        "provider": "easyJet",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+        "url": "https://www.easyjet.com/en/buy/flights?utm_source=google&utm_medium=flight_search&utm_campaign=PH_LGWCDG&gclid=ADowPOKrKEFkzNh84-7JRoUvfxIxr4WULTOWkAlDasP7IGO_gXwD0_7jR8KyQ1PFcobw8Th0Rfusm7gQEvbxnExaox5eky99UP3SmVYC450C9thwgSA&gclsrc=gf",
+        "full_info": "Continue to book with easyJet airline for 2955 Philippine pesos (Equivalent to 36 British pounds on easyJet)"
+      }
+    ]
+  },
+  {
+    "airline": "easyJet",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+    "price": "₱2955",
+    "duration": "1 hr 20 min",
+    "departure": {
+      "time": "7:35 PM",
+      "airport": "London Gatwick Airport (LGW)"
+    },
+    "landing": {
+      "time": "9:55 PM",
+      "airport": "Paris Charles de Gaulle Airport (CDG)"
+    },
+    "emissions": {
+      "amount": "Not available",
+      "comparison": "Typical",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [],
+    "baggage": [
+      "Checked baggage for a fee"
+    ],
+    "flight_info": [
+      "Airbus A319",
+      "8409"
+    ],
+    "booking_options": [
+      {
+        "provider": "easyJet",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+        "url": "https://www.easyjet.com/en/buy/flights?utm_source=google&utm_medium=flight_search&utm_campaign=PH_LGWCDG&gclid=ADowPOKR7NpyD0oox0KzAOIFWIT3KyIXkvIZgliIYxAGvrE_q1I8La_voGoqjXEBNgaJwBIrvQSYh0HSIYfms201jdSgGAeysI2ZYKYnKa7cUry3rEA&gclsrc=gf",
+        "full_info": "Continue to book with easyJet airline for 2955 Philippine pesos (Equivalent to 36 British pounds on easyJet)"
+      }
+    ]
+  },
+  {
+    "airline": "easyJet",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+    "price": "₱2955",
+    "duration": "1 hr 20 min",
+    "departure": {
+      "time": "7:40 PM",
+      "airport": "London Luton Airport (LTN)"
+    },
+    "landing": {
+      "time": "10:00 PM",
+      "airport": "Paris Charles de Gaulle Airport (CDG)"
+    },
+    "emissions": {
+      "amount": "Not available",
+      "comparison": "+13% emissions",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [],
+    "baggage": [
+      "Checked baggage for a fee"
+    ],
+    "flight_info": [
+      "Airbus A319",
+      "2439"
+    ],
+    "booking_options": [
+      {
+        "provider": "easyJet",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+        "url": "https://www.easyjet.com/en/buy/flights?utm_source=google&utm_medium=flight_search&utm_campaign=PH_LTNCDG&gclid=ADowPOKgkW5liu0puZIHYoAf_4mtnvLwz83opO_Uy3Zb546KzWeNRbSGnSZ4_AMZgc72WzjbwyK2i1QPYQqpXO2h1ichnT8h08xOwr8yokYuypfrc8M&gclsrc=gf",
+        "full_info": "Continue to book with easyJet airline for 2955 Philippine pesos (Equivalent to 36 British pounds on easyJet)"
+      }
+    ]
+  },
+  {
+    "airline": "easyJet",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+    "price": "₱3201",
+    "duration": "1 hr 10 min",
+    "departure": {
+      "time": "3:35 PM",
+      "airport": "London Stansted Airport (STN)"
+    },
+    "landing": {
+      "time": "5:45 PM",
+      "airport": "Paris Charles de Gaulle Airport (CDG)"
+    },
+    "emissions": {
+      "amount": "Not available",
+      "comparison": "Typical",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [],
+    "baggage": [
+      "Checked baggage for a fee"
+    ],
+    "flight_info": [
+      "Airbus A320",
+      "4660"
+    ],
+    "booking_options": [
+      {
+        "provider": "easyJet",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+        "url": "https://www.easyjet.com/en/buy/flights?utm_source=google&utm_medium=flight_search&utm_campaign=PH_STNCDG&gclid=ADowPOKB2QJhEpl4WMVCC6qPawE3JOF1mdFm1j0kfXbLOCQXPOlkQIxZ-dvZXRZiQbhw6MWT49Qe_6jjh4BZ0DqKVDNwmaoHefMCYzQjJc0QvMfwyy0&gclsrc=gf",
+        "full_info": "Continue to book with easyJet airline for 3201 Philippine pesos (Equivalent to 39 British pounds on easyJet)"
+      }
+    ]
+  },
+  {
+    "airline": "easyJet",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+    "price": "₱3612",
+    "duration": "1 hr 25 min",
+    "departure": {
+      "time": "6:05 AM",
+      "airport": "London Luton Airport (LTN)"
+    },
+    "landing": {
+      "time": "8:30 AM",
+      "airport": "Paris Charles de Gaulle Airport (CDG)"
+    },
+    "emissions": {
+      "amount": "Not available",
+      "comparison": "+13% emissions",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [],
+    "baggage": [
+      "Checked baggage for a fee"
+    ],
+    "flight_info": [
+      "Airbus A319",
+      "2433"
+    ],
+    "booking_options": [
+      {
+        "provider": "easyJet",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+        "url": "https://www.easyjet.com/en/buy/flights?utm_source=google&utm_medium=flight_search&utm_campaign=PH_LTNCDG&gclid=ADowPOIs5lq8DgRTvKzEZMGXr1KlcMfukf47nYKT8hky4IgtavWBzheCXl1UOCDvv8AoVNK-MP94eWBs6Dt3_Oim6PKHWlCTiMS-y20H9Kv8jrNEu5Y&gclsrc=gf",
+        "full_info": "Continue to book with easyJet airline for 3611 Philippine pesos (Equivalent to 44 British pounds on easyJet)"
+      }
+    ]
+  },
+  {
+    "airline": "easyJet",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+    "price": "₱3612",
+    "duration": "1 hr 25 min",
+    "departure": {
+      "time": "1:55 PM",
+      "airport": "London Luton Airport (LTN)"
+    },
+    "landing": {
+      "time": "4:20 PM",
+      "airport": "Paris Charles de Gaulle Airport (CDG)"
+    },
+    "emissions": {
+      "amount": "Not available",
+      "comparison": "+13% emissions",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [],
+    "baggage": [
+      "Checked baggage for a fee"
+    ],
+    "flight_info": [
+      "Airbus A319",
+      "2437"
+    ],
+    "booking_options": [
+      {
+        "provider": "easyJet",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+        "url": "https://www.easyjet.com/en/buy/flights?utm_source=google&utm_medium=flight_search&utm_campaign=PH_LTNCDG&gclid=ADowPOIwu7ai2S1hIHnq8f-8r4gB1_PWlHDy2C5reIMHKTs-uTyRmhDjaNKh1eGJhMXsRsNEDFDswxZmsMxtYwKFpY5d1RbWWtGUyei7XCaKvtUzTd8&gclsrc=gf",
+        "full_info": "Continue to book with easyJet airline for 3611 Philippine pesos (Equivalent to 44 British pounds on easyJet)"
+      }
+    ]
+  },
+  {
+    "airline": "easyJet",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+    "price": "₱4433",
+    "duration": "1 hr 25 min",
+    "departure": {
+      "time": "9:55 AM",
+      "airport": "London Luton Airport (LTN)"
+    },
+    "landing": {
+      "time": "12:20 PM",
+      "airport": "Paris Charles de Gaulle Airport (CDG)"
+    },
+    "emissions": {
+      "amount": "Not available",
+      "comparison": "+13% emissions",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [],
+    "baggage": [
+      "Checked baggage for a fee"
+    ],
+    "flight_info": [
+      "Airbus A319",
+      "2435"
+    ],
+    "booking_options": [
+      {
+        "provider": "easyJet",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+        "url": "https://www.easyjet.com/en/buy/flights?utm_source=google&utm_medium=flight_search&utm_campaign=PH_LTNCDG&gclid=ADowPOJbnWzkljykUEK52GuiLa-vW073naEuhW3zzubpNAknK6w7fhQZUWf-UBkIhHLKtSQC2XLWuDwhb8MQrFX9QMQTrj4FeHcTne1HUnRBOLnj5cU&gclsrc=gf",
+        "full_info": "Continue to book with easyJet airline for 4432 Philippine pesos (Equivalent to 54 British pounds on easyJet)"
+      }
+    ]
+  }
+]

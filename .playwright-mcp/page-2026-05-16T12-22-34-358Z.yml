@@ -1,0 +1,157 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - button "Main menu" [ref=e6] [cursor=pointer]:
+          - img [ref=e7]
+        - link "Google" [ref=e11] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e13]:
+        - generic [ref=e15]:
+          - generic:
+            - button "Skip to main content" [ref=e16]:
+              - generic: Skip to main content
+            - button "Accessibility feedback" [ref=e19]:
+              - generic: Accessibility feedback
+          - navigation [ref=e23]:
+            - link "Travel" [ref=e26]:
+              - img [ref=e29]
+              - generic: Travel
+            - link "Explore" [ref=e35]:
+              - img [ref=e38]
+              - generic: Explore
+            - link "Flights" [ref=e43]:
+              - img [ref=e46]
+              - generic: Flights
+            - link "Hotels" [ref=e51]:
+              - img [ref=e54]
+              - generic: Hotels
+            - link "Vacation rentals" [ref=e62]:
+              - img [ref=e65]
+              - generic: Vacation rentals
+        - generic [ref=e79]:
+          - button "Change appearance" [ref=e81]:
+            - img
+          - tooltip [ref=e84]: Change appearance
+      - generic [ref=e86]:
+        - button "Google apps" [ref=e90] [cursor=pointer]:
+          - img [ref=e91]
+        - link "Sign in" [ref=e94] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=searchandassistant&passive=1209600&continue=https://www.google.com/travel/flights?q%3DFlights%2Bto%2BPAR%2Bfrom%2BLON%2Bon%2B2026-06-01%2Boneway&followup=https://www.google.com/travel/flights?q%3DFlights%2Bto%2BPAR%2Bfrom%2BLON%2Bon%2B2026-06-01%2Boneway&ec=GAZAlQM
+  - generic [ref=e102]:
+    - generic [ref=e104]:
+      - generic [ref=e105]: Loading results
+      - progressbar [ref=e106]
+    - generic [ref=e113]:
+      - search [ref=e114]:
+        - heading "Flight search" [level=1] [ref=e115]
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - combobox "Change ticket type. One way" [ref=e122] [cursor=pointer]:
+              - generic:
+                - img
+              - generic:
+                - generic: One way
+              - generic:
+                - img
+            - button "1 passenger, change number of passengers." [ref=e128]:
+              - generic [ref=e131]:
+                - img [ref=e132]
+                - generic [ref=e134]: "1"
+              - img [ref=e135]
+            - combobox "Change seating class. Economy" [ref=e141] [cursor=pointer]:
+              - generic:
+                - generic: Economy
+              - generic:
+                - img
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - generic [ref=e150]:
+                - combobox "Where from?" [ref=e151]: London
+                - generic [ref=e153]: London
+                - img [ref=e154]
+              - button "Swap origin and destination." [ref=e158] [cursor=pointer]:
+                - img [ref=e159]
+              - generic [ref=e166]:
+                - combobox "Where to?" [ref=e167]: Paris
+                - generic [ref=e169]: Paris
+                - img [ref=e170]
+            - generic [ref=e183]:
+              - img [ref=e185]
+              - textbox "Departure" [ref=e188]: Mon, Jun 1
+              - button [ref=e191]:
+                - img [ref=e194]
+              - button [ref=e198]:
+                - img [ref=e201]
+          - heading "Filters" [level=2] [ref=e204]
+          - generic [ref=e207]:
+            - button "All filters" [ref=e210]:
+              - img [ref=e213]
+              - generic [ref=e215]: All filters
+            - generic [ref=e218]:
+              - button "Stops, Not selected" [ref=e221]:
+                - generic [ref=e225]:
+                  - generic [ref=e226]: Stops
+                  - img [ref=e227]
+              - button "Airlines, Not selected" [ref=e231]:
+                - generic [ref=e235]:
+                  - generic [ref=e236]: Airlines
+                  - img [ref=e237]
+              - button "Bags, Not selected" [ref=e241]:
+                - generic [ref=e245]:
+                  - generic [ref=e246]: Bags
+                  - img [ref=e247]
+              - button "Price, Not selected" [ref=e251]:
+                - generic [ref=e255]:
+                  - generic [ref=e256]: Price
+                  - img [ref=e257]
+              - button "Times, Not selected" [ref=e261]:
+                - generic [ref=e265]:
+                  - generic [ref=e266]: Times
+                  - img [ref=e267]
+              - button "Emissions, Not selected" [ref=e271]:
+                - generic [ref=e275]:
+                  - generic [ref=e276]: Emissions
+                  - img [ref=e277]
+              - button "Connecting airports, Not selected" [ref=e281]:
+                - generic [ref=e285]:
+                  - generic [ref=e286]: Connecting airports
+                  - img [ref=e287]
+              - button "Duration, Not selected" [ref=e291]:
+                - generic [ref=e295]:
+                  - generic [ref=e296]: Duration
+                  - img [ref=e297]
+      - main:
+        - heading "Search results" [level=2] [ref=e299]
+      - contentinfo [ref=e303]:
+        - generic [ref=e305]:
+          - button "Language·English (United States)" [ref=e306]:
+            - img [ref=e309]
+            - generic [ref=e311]: Language·English (United States)
+          - button "Location·Philippines" [ref=e312]:
+            - img [ref=e315]
+            - generic [ref=e318]: Location·Philippines
+          - button "Currency PHP" [ref=e319]:
+            - img [ref=e322]
+            - generic [ref=e332]: Currency·PHP
+        - generic [ref=e333]:
+          - link "About Google Travel" [ref=e334] [cursor=pointer]:
+            - /url: https://about.google/?hl=en-US
+            - text: About
+          - link "Privacy" [ref=e335] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-US
+          - link "Terms" [ref=e336] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-US
+          - link "Join user studies" [ref=e337] [cursor=pointer]:
+            - /url: https://google.qualtrics.com/jfe/form/SV_3NMIMtX0F2zkakR?reserved%3D1%26utm_source%3DFooter%2520link%26utm_medium%3Down_web%26%20utm_campaign%3DQ2%26productTag%3D0%26campaignDate%3DApril2020%26referral_code%3DUXbJ377133&Q_Language=en-US
+          - link "Feedback" [ref=e338] [cursor=pointer]:
+            - /url: ./#0
+          - link "Help Center" [ref=e339] [cursor=pointer]:
+            - /url: https://support.google.com/travel/?hl=en-US#topic=2475360
+        - generic [ref=e340]:
+          - paragraph [ref=e341]:
+            - text: Displayed currencies may differ from the currencies used to purchase flights.
+            - link "Learn more about currencies" [ref=e342] [cursor=pointer]:
+              - /url: https://www.google.com/googlefinance/disclaimer?hl=en-US&gl=PH
+              - text: Learn more
+          - paragraph [ref=e343]: Prices are final prices and include all taxes and fees, including payment fees for the cheapest common payment method (which may differ depending on the provider). Additional charges may apply for other types of payment, luggage, meals, WLAN or other additional services. Prices, availability and travel details are provided based on the latest information received from our partners. This information is reflected in the results within a period of less than 24 hours. Additional conditions may also be applied by our partners. You should then check prices and conditions with the services providers before booking.
