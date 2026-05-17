@@ -13,7 +13,7 @@ async def scrape_flights(
     date: str = "2026-06-05",
     flight_type: str = "oneway",
     limit: int = 10,
-    concurrency: int = 2,
+    concurrency: int = 5,
     stops: Optional[str] = None,
     bags: Optional[int] = 1,
     airlines: Optional[List[str]] = Query(None),

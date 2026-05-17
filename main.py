@@ -515,12 +515,12 @@ async def apply_filters(page, filters):
             await page.keyboard.press("Escape")
             await page.wait_for_timeout(2000)
 
-async def scrape_google_flights(origin, destination, date, flight_type='oneway', concurrency=2, limit=5, filters=None):
+async def scrape_google_flights(origin, destination, date, flight_type='oneway', concurrency=5, limit=5, filters=None):
     """
     Main entry point for concurrent Google Flights scraping.
     """
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
+        browser = await p.chromium.launch(headless=False)
         context = await browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             locale="en-US"
@@ -549,7 +549,7 @@ async def scrape_google_flights(origin, destination, date, flight_type='oneway',
         indices_to_scrape = list(range(min(limit, len(valid_cards))))
         
         await main_page.close()
-        effective_concurrency = max(1, min(concurrency, 3))
+        effective_concurrency = max(1, min(concurrency, 10))
         log_message(f"Processing {len(indices_to_scrape)} flights with concurrency={effective_concurrency}...")
 
         semaphore = asyncio.Semaphore(effective_concurrency)
@@ -568,7 +568,7 @@ if __name__ == "__main__":
     parser.add_argument("--date", default="2026-06-05", help="Date in YYYY-MM-DD")
     parser.add_argument("--type", default="oneway", help="Flight type (oneway/roundtrip)")
     parser.add_argument("--limit", type=int, default=10, help="Max flights to scrape")
-    parser.add_argument("--concurrency", type=int, default=2, help="Max concurrent tasks")
+    parser.add_argument("--concurrency", type=int, default=5, help="Max concurrent tasks")
     parser.add_argument("--stops", help="Stops filter (any, nonstop, 1stop, 2stops)")
     parser.add_argument("--bags", type=int, default=1, help="Carry-on bags count")
     parser.add_argument("--max-price", type=int, default=4000, help="Maximum price limit")

@@ -36,14 +36,371 @@
       {
         "provider": "wego",
         "provider_logo": "https://www.google.com/s2/favicons?domain=www.wego.com&sz=64",
-        "url": "https://www.wego.com/flights/handoff?Adult=1&TripType=OneWay&PointOfSaleCountry=PH&DisplayedPrice=3917&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=AED&Slice1=1&Cabin1=Economy&Carrier1=PR&DepartureDate1=2026-06-05T02:00:00&ArrivalDate1=2026-06-05T03:45:00&Origin1=DVO&Destination1=MNL&BookingCode1=O&FlightNumber1=2808&TsCode=5aa90&app_client=roxana&ReferralId=GOOG_GFS_712&wg_source=meta_distribution&wg_medium=gfs&wg_campaign=fbl&t=1778996169&sig=AXW5OLpw62yX-aAFMF1Gd_otWYyawVJSeyXcfYu84A9Q6EoVM0l60dDFXPHU3GX_0sljRwu-Fr8TaivopAo3EeMI7wsg8o4KJPqnVAOWVazvVyz94cS8tj7_e_Hk3n8TDea6j-nELUf-RUtVsRP7Xu5l8gA3S9xjll3lZXh0pwy7L4bCSBEsBdrz-0qN5n5hjyEskx-ne__8Ianti0B5cu8NpY-RUDqitiGJHLAf23T8JhycMLZ76tff1xX0_NtryNnd1i7T_dwPR0mKuEP0QCu10u_JuHXZlDxK85BngR5wSLhQbwj2_-j8lL9AcJibleaOJEFpXtrLbbMXA8QxarR3u6dXTXTkUooaU9v8pUs0rERO-Su5_ch74mpalIgSF8TbzYQQheHXc47FBgIwoKWCemyzBMLfkO_v9jNHvLjk4dK_mxcqpWLgFVX5IdC5zdXLrFlAOxGlQ3xyr3rQBFMT3b57zjgaUFtAtFjCNOVmBMsUS707isKlbQdMZogTRrTL5iM%3D&gclid=ADowPOK-g6plXABJvW7Yepu6GS4hrd7Ekk_-c7-3IPm0D_0nDZcydZstkF0vfNjdD_4_vw3D-wNKtUDZP82o9Gs_Cf4a58VE55ryJf-8dFnsg__USvC8&gclsrc=gf",
+        "url": "https://www.wego.com/flights/handoff?Adult=1&TripType=OneWay&PointOfSaleCountry=PH&DisplayedPrice=3917&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=AED&Slice1=1&Cabin1=Economy&Carrier1=PR&DepartureDate1=2026-06-05T02:00:00&ArrivalDate1=2026-06-05T03:45:00&Origin1=DVO&Destination1=MNL&BookingCode1=O&FlightNumber1=2808&TsCode=5aa90&app_client=roxana&ReferralId=GOOG_GFS_712&wg_source=meta_distribution&wg_medium=gfs&wg_campaign=fbl&t=1778999307&sig=AXW5OLpeKGg_5yvaW5SkBn-Q0TyIGF7BYuwypNy7s7HR5I5rz5R5WY2Nrrp2N94hz0O6ZG81Nit6J8NNMyn4MmoKrBrRIn2tYXgZa7G0lcvyobWGQ1UCxS1WYdorWZwn_v7a93VesJCuS4aIlB6gQauRcfP7yIKy5MDqWCNLc58iEGA6vmklAxrbXRuaXQugQWOvri0Cl-Ndfd5_vshlFbeS6Agtoj4TqiLwrPCZOhWm5m81ZSpQ-GfaCZ4YUhauJtpiZ_9wnz4nsvoXylin01e8Lte-9ry-d_mOX1cwL4alOYzWSOtb8U0wSKwQU5onvzeAJPQ5NfEqCvtyNzcnzyW9z8pgeULlyQMu0Ly2mq5XVFLL6_uLaJPJ6gGmye_mjKcZTkVE1RSoaP2aOi8WUgRftnAJKr-eVi0htyg4xgZPPip4qzs4s8WJOVhNPwXo8k5QIa1onMbnuj7cFPy3tvElxqmnSEd65EAzkmp3Sn1vxZEvQODjSm1VbBarwwEhWYrgP2g%3D&gclid=ADowPOJws0yPfGCrgjOXKv9pEI65vmmgO2PeBuZlvJW3M107_hrAFB-9VlGehGR91yYkED0qfUFpfIJYiWGahSyl6ksfrQG_8PDJwRhvEVdl3z2unSes&gclsrc=gf",
         "full_info": "Continue to book with wego for 3917 Philippine pesos"
       },
       {
         "provider": "Travomint",
         "provider_logo": "https://www.google.com/s2/favicons?domain=gfs.travomint.com&sz=64",
-        "url": "https://gfs.travomint.com/google/flights?Adult=1&PointOfSaleCountry=PH&DisplayedPrice=8453&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=PHP&TripType=OneWay&Slice1=1&Cabin1=Economy&Carrier1=PR&DepartureDate1=2026-06-05&Origin1=DVO&Destination1=MNL&BookingCode1=T&FlightNumber1=2808&ReferralId=GOOG_GFS_712&gclid=ADowPOLhVktX0fy1RUAsXl_TC3fWcKpdva-gpUqmmkyaQsqjJDrNmh845Wy47vAfWQmoDH-1ype0JPB5FaUkZIY1s54HfiTfaHI1Lfd3GgCuBqBgarc7&gclsrc=gf",
+        "url": "https://gfs.travomint.com/google/flights?Adult=1&PointOfSaleCountry=PH&DisplayedPrice=8453&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=PHP&TripType=OneWay&Slice1=1&Cabin1=Economy&Carrier1=PR&DepartureDate1=2026-06-05&Origin1=DVO&Destination1=MNL&BookingCode1=T&FlightNumber1=2808&ReferralId=GOOG_GFS_712&gclid=ADowPOJmaMtuxIg3xLvmxaNo4ibb-CMOp63MfFRcZwXIL7gBg2yPfXd3KdQ6TQwPnfb2egj_9DlXctAw2XSE4bCca5e0CO0UWSCnmQ-pBN2a_LxnZzrE&gclsrc=gf",
         "full_info": "Continue to book with Travomint for 8453 Philippine pesos"
+      }
+    ]
+  },
+  {
+    "airline": "Philippine Airlines",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/PR.png",
+    "price": "₱3997",
+    "cabin": "Economy",
+    "duration": "1 hr 45 min",
+    "is_overnight": false,
+    "departure": {
+      "time": "8:10 PM",
+      "airport": "Davao International Airport (DVO)"
+    },
+    "landing": {
+      "time": "9:55 PM",
+      "airport": "Ninoy Aquino International Airport (MNL)"
+    },
+    "emissions": {
+      "amount": "104 kg CO2e",
+      "comparison": null,
+      "contrail": "Contrail warming potential: Medium"
+    },
+    "amenities": [
+      "Average legroom (30 in)",
+      "Stream media to your device"
+    ],
+    "baggage": null,
+    "flight_info": [
+      "Airbus A321"
+    ],
+    "booking_options": [
+      {
+        "provider": "Philippine Airlines",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/PR.png",
+        "url": "https://booking.philippineairlines.com/booking?lang=en&search=%7B%22commercialFareFamilies%22:%5B%22PRECO%22,%22PRPEY%22,%22PRBUS%22%5D,%22itineraries%22:%5B%7B%22departureDateTime%22:%222026-06-05%22,%22originLocationCode%22:%22DVO%22,%22destinationLocationCode%22:%22MNL%22,%22directFlights%22:false%7D%5D,%22travelers%22:%5B%7B%22passengerTypeCode%22:%22ADT%22%7D%5D%7D&portalFacts=%5B%7B%22key%22:%22countryCode%22,%22value%22:%22PH%22%7D,%7B%22key%22:%22useMiles%22,%22value%22:%22false%22%7D%5D",
+        "full_info": "Continue to book with Philippine Airlines airline for 3997 Philippine pesos"
+      },
+      {
+        "provider": "wego",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=www.wego.com.ph&sz=64",
+        "url": "https://www.wego.com.ph/flights/searches/DVO-MNL-2026-06-05/economy/1a:0c:0i/af8b8fac78e236aamsr:PR2820~5~2010~2155/af8b8fac78e236aamsr:handoff_wego_com:df0a15ac0acd36e1:ss?currency_code=PHP&placement_type=integrated_booking&ulang=en&gclid=ADowPOLx-ov9yOtcJ6UHYQoJp1vfUZPM0-vzrEPPz8GsCKWBdHzozuYPvT8EPR1mqY4n0qU_k9TVMWlI5C-Mv4II8ckgqNARUo72FEh9nUNVqPYwQ_hq&gclsrc=gf&ts_code=5aa90&bow_only=true&app_client=roxana",
+        "full_info": "Continue to book with wego for 3917 Philippine pesos"
+      },
+      {
+        "provider": "Travomint",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=gfs.travomint.com&sz=64",
+        "url": "https://gfs.travomint.com/google/flights?Adult=1&PointOfSaleCountry=PH&DisplayedPrice=8453&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=PHP&TripType=OneWay&Slice1=1&Cabin1=Economy&Carrier1=PR&DepartureDate1=2026-06-05&Origin1=DVO&Destination1=MNL&BookingCode1=T&FlightNumber1=2820&ReferralId=GOOG_GFS_712&gclid=ADowPOLF2julImXp645DThCX-RO_QO8R8iazE5rPTOMQLokrytkihK3z8dvYkB-H_svpy0yhEa9hhqBQwe_IiZNtquplFz8lCAhOs-6_tMYBQnqQ79-9&gclsrc=gf",
+        "full_info": "Continue to book with Travomint for 8453 Philippine pesos"
+      }
+    ]
+  },
+  {
+    "airline": "Philippine Airlines",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/PR.png",
+    "price": "₱3997",
+    "cabin": "Economy",
+    "duration": "1 hr 50 min",
+    "is_overnight": true,
+    "departure": {
+      "time": "11:20 PM",
+      "airport": "Davao International Airport (DVO)"
+    },
+    "landing": {
+      "time": "1:10 AM",
+      "airport": "+1Ninoy Aquino International Airport (MNL)"
+    },
+    "emissions": {
+      "amount": "104 kg CO2e",
+      "comparison": null,
+      "contrail": "Contrail warming potential: Medium"
+    },
+    "amenities": [
+      "Average legroom (30 in)",
+      "Stream media to your device"
+    ],
+    "baggage": null,
+    "flight_info": [
+      "Airbus A321"
+    ],
+    "booking_options": [
+      {
+        "provider": "Philippine Airlines",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/PR.png",
+        "url": "https://booking.philippineairlines.com/booking?lang=en&search=%7B%22commercialFareFamilies%22:%5B%22PRECO%22,%22PRPEY%22,%22PRBUS%22%5D,%22itineraries%22:%5B%7B%22departureDateTime%22:%222026-06-05%22,%22originLocationCode%22:%22DVO%22,%22destinationLocationCode%22:%22MNL%22,%22directFlights%22:false%7D%5D,%22travelers%22:%5B%7B%22passengerTypeCode%22:%22ADT%22%7D%5D%7D&portalFacts=%5B%7B%22key%22:%22countryCode%22,%22value%22:%22PH%22%7D,%7B%22key%22:%22useMiles%22,%22value%22:%22false%22%7D%5D",
+        "full_info": "Continue to book with Philippine Airlines airline for 3997 Philippine pesos"
+      },
+      {
+        "provider": "wego",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=www.wego.com&sz=64",
+        "url": "https://www.wego.com/flights/handoff?Adult=1&TripType=OneWay&PointOfSaleCountry=PH&DisplayedPrice=3917&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=AED&Slice1=1&Cabin1=Economy&Carrier1=PR&DepartureDate1=2026-06-05T23:20:00&ArrivalDate1=2026-06-06T01:10:00&Origin1=DVO&Destination1=MNL&BookingCode1=O&FlightNumber1=2824&TsCode=5aa90&app_client=roxana&ReferralId=GOOG_GFS_712&wg_source=meta_distribution&wg_medium=gfs&wg_campaign=fbl&t=1778999311&sig=AXW5OLp_F3i3_6qmhmPua7fBzD3c_9ulMUyti3Z5ZPGFtcoYIFAWVkHiDp20jFD7DfL_bpvUhi9ITtD2OaT6-SmWw0Kno4jW_T8hyW9W8L9pEpXQDZ0OX8GH5QDXylY75FnDQ93av8-aLtiZQDnFVSPyjQYMvEMSCB7Qdj4tlUbDVSXmLkA1U7XqZOyoGKl3TK259068dhWYfKtUDRz6vFe8F63AbfMImDIWKrWfS78KD1gVpWrnOT5HRZX8Dsf2mAe8_rAEo71Qg44F2pd5u4XW_VGN9LxR3kTt6YmmmyDSMHPLP9yPhy7boSGG_pJyLZZplVAXWXrUOhUEorbtb9R2t_z4Pw4XFb9G-1afemPINxUEu9VHVFaejdBq1xPPCzyW5oAHFGXK1Eu8yw3VTLvFf1q-LOQPoF_0NsLXpxUg71tBvsJquedJwVX4yG88MPk_6YQaD2fomj09k9FF3-Wbg0PnrUsnow0P5-mI9TGtZLG3o9ZH-m8NbOuUzPK6kjpUQ_Y%3D&gclid=ADowPOL-udZhS1nr31DUBKSietQEbzi8bilO_gNxKzVhtT_kgbXWB2pdrD7OEA6h6zEUhKorPXdTP88AvK7nS53La0xvWRR_WluYoiA3RtGR-4kCrE-u&gclsrc=gf",
+        "full_info": "Continue to book with wego for 3917 Philippine pesos"
+      },
+      {
+        "provider": "Travomint",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=gfs.travomint.com&sz=64",
+        "url": "https://gfs.travomint.com/google/flights?Adult=1&PointOfSaleCountry=PH&DisplayedPrice=8453&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=PHP&TripType=OneWay&Slice1=1&Cabin1=Economy&Carrier1=PR&DepartureDate1=2026-06-05&Origin1=DVO&Destination1=MNL&BookingCode1=T&FlightNumber1=2824&ReferralId=GOOG_GFS_712&gclid=ADowPOJreEedfKRsQgwWdJPobhF8habFJYaCA3X7xwfqahVOy4-YgtT8j1U3yNwAN-E61NmihqzPdY1AlR0AxOmYxVFSIf6D1VI9F_iD3mttsUrMgvKP&gclsrc=gf",
+        "full_info": "Continue to book with Travomint for 8453 Philippine pesos"
+      }
+    ]
+  },
+  {
+    "airline": "Cebu Pacific",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+    "price": "₱4009",
+    "cabin": "Economy",
+    "duration": "2 hr",
+    "is_overnight": false,
+    "departure": {
+      "time": "12:05 AM",
+      "airport": "Davao International Airport (DVO)"
+    },
+    "landing": {
+      "time": "2:05 AM",
+      "airport": "Ninoy Aquino International Airport (MNL)"
+    },
+    "emissions": {
+      "amount": "77 kg CO2e",
+      "comparison": "-24% emissions",
+      "contrail": "Contrail warming potential: Medium"
+    },
+    "amenities": [
+      "Below average legroom (28 in)",
+      "In-seat USB outlet"
+    ],
+    "baggage": null,
+    "flight_info": [
+      "Airbus A320neo"
+    ],
+    "booking_options": [
+      {
+        "provider": "Cebu Pacific",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+        "url": "https://www.cebupacificair.com/en-PH/flight/select?dd1=2026-06-05&o1=DVO&d1=MNL&adt=1&chd=0&inf=0&inl=0&gclid=ADowPOK1xDS3Lb__NDPNU6Z6hgW8DIlncLaayeZSNO3YHvr4ZYjYGQMfLr5_3XRpjmWynulqav3BtvuJnEBre2gjo1x7aoaPXGwJuyeyztTvXcGNI4J7&gclsrc=gf",
+        "full_info": "Continue to book with Cebu Pacific airline for 4009 Philippine pesos"
+      },
+      {
+        "provider": "wego",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=www.wego.com&sz=64",
+        "url": "https://www.wego.com/flights/handoff?Adult=1&TripType=OneWay&PointOfSaleCountry=PH&DisplayedPrice=3929&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=AED&Slice1=1&Cabin1=Economy&Carrier1=5J&DepartureDate1=2026-06-05T00:05:00&ArrivalDate1=2026-06-05T02:05:00&Origin1=DVO&Destination1=MNL&FlightNumber1=3952&TsCode=5aa90&app_client=roxana&ReferralId=GOOG_GFS_712&wg_source=meta_distribution&wg_medium=gfs&wg_campaign=fbl&t=1778999299&sig=AXW5OLqJ6IykRUYAILpw0QK2dte2SGUtiJlP-zLGvG_95Dswy30Shf-pgWsxTb5KMO1H1kEMqoejTzRag_Nx3PyiJUP6tQd7Vb5xBzGMJ3hplp6wkH4Vlco3qafwJ1LafswOy4TbWcjox9jOrxUZjl6UAhfxELMYahk0owRnKgChajeVQy3pBbC49jX1twxppuCLSMnpSuoTRMZ281RBu576MVdimQPCEDWxRc8c8YzpCabObDSaq5HAjWyrtnza32JYm-yBm1ynzkYWeSj1s5vuDRVG0alkXRhW9-o4neotFIWJqI5aMlGDiQhiSY4M_F_tUavZSs3BdxjjHmPLD1ISLwHQaUaY-vp-T98vNy-oG_FusbZKz56WAO-pC1gsGqip0AojKJnG5GwjX_AznGYHZCcHo9sicNGsjHjq-x4EKoex7BDI167udFFiJYo6je-S9cGMqin6zonlOMdPevKcklNmnzFtodjJMnEdFcYksn1Y_dLlrTJ74V_nfuo4-q71GiQ%3D&gclid=ADowPOJJ85vWsOzTVjMBsMsIe4l65qSOgelbVaxCVDDXsVB00CaTxKV47uPHOKOBWCdQWQ2u5fjZkg95Ri1YK5MQaoltDf05DEBf_FYFwjT-6YrvPihX&gclsrc=gf",
+        "full_info": "Continue to book with wego for 3929 Philippine pesos"
+      }
+    ]
+  },
+  {
+    "airline": "Cebu Pacific",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+    "price": "₱4345",
+    "cabin": "Economy",
+    "duration": "2 hr",
+    "is_overnight": false,
+    "departure": {
+      "time": "7:05 AM",
+      "airport": "Davao International Airport (DVO)"
+    },
+    "landing": {
+      "time": "9:05 AM",
+      "airport": "Ninoy Aquino International Airport (MNL)"
+    },
+    "emissions": {
+      "amount": "93 kg CO2e",
+      "comparison": "-8% emissions",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [
+      "Below average legroom (28 in)",
+      "In-seat USB outlet"
+    ],
+    "baggage": null,
+    "flight_info": [
+      "Airbus A321"
+    ],
+    "booking_options": [
+      {
+        "provider": "Cebu Pacific",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+        "url": "https://www.cebupacificair.com/en-PH/flight/select?dd1=2026-06-05&o1=DVO&d1=MNL&adt=1&chd=0&inf=0&inl=0&gclid=ADowPOJoCXvQmFhdRWUpwxYY4pH0eM_de240IvSFJ70ZdrIgj2b-XC4XZI0g1pErXWawW1h_ANhHooNZV6CtbvCTu6ytwaY_JJH-C_4Yb9Xzxv35eogR&gclsrc=gf",
+        "full_info": "Continue to book with Cebu Pacific airline for 4345 Philippine pesos"
+      },
+      {
+        "provider": "wego",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=www.wego.com.ph&sz=64",
+        "url": "https://www.wego.com.ph/flights/searches/DVO-MNL-2026-06-05/economy/1a:0c:0i/926b6a1b86630da4msr:5J966~5~0705~0905/926b6a1b86630da4msr:handoff_wego_com:e80080483c14efb6:ss?currency_code=PHP&placement_type=integrated_booking&ulang=en&gclid=ADowPOJOS5R2X5RiugNOhV7M4q_66sXWbPw33UJYtQB5MRjhqHApUZyfZ07459wAk83ARs-OdanNQ8mPNqD0b-um5f_5alouozfYnFmb7OUvgl8o8YhO&gclsrc=gf&ts_code=5aa90&bow_only=true&app_client=roxana",
+        "full_info": "Continue to book with wego for 4258 Philippine pesos"
+      }
+    ]
+  },
+  {
+    "airline": "Cebu Pacific",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+    "price": "₱4345",
+    "cabin": "Economy",
+    "duration": "2 hr",
+    "is_overnight": false,
+    "departure": {
+      "time": "8:50 AM",
+      "airport": "Davao International Airport (DVO)"
+    },
+    "landing": {
+      "time": "10:50 AM",
+      "airport": "Ninoy Aquino International Airport (MNL)"
+    },
+    "emissions": {
+      "amount": "75 kg CO2e",
+      "comparison": "-26% emissions",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet"
+    ],
+    "baggage": null,
+    "flight_info": [
+      "Airbus A330",
+      "A330"
+    ],
+    "booking_options": [
+      {
+        "provider": "Cebu Pacific",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+        "url": "https://www.cebupacificair.com/en-PH/flight/select?dd1=2026-06-05&o1=DVO&d1=MNL&adt=1&chd=0&inf=0&inl=0&gclid=ADowPOJfRUaiKrxkxOt0EbrUT0o33zFbKaD9VLqqCsTFulz2voG0ZOHSpLnf1tMa-tgVcGsXiuZWIO_Y5Oho9wzNnqXHbgX7c4W3JwV9Y4_3JkF5F8wo&gclsrc=gf",
+        "full_info": "Continue to book with Cebu Pacific airline for 4345 Philippine pesos"
+      },
+      {
+        "provider": "wego",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=www.wego.com&sz=64",
+        "url": "https://www.wego.com/flights/handoff?Adult=1&TripType=OneWay&PointOfSaleCountry=PH&DisplayedPrice=4258&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=AED&Slice1=1&Cabin1=Economy&Carrier1=5J&DepartureDate1=2026-06-05T08:50:00&ArrivalDate1=2026-06-05T10:50:00&Origin1=DVO&Destination1=MNL&FlightNumber1=962&TsCode=5aa90&app_client=roxana&ReferralId=GOOG_GFS_712&wg_source=meta_distribution&wg_medium=gfs&wg_campaign=fbl&t=1778999337&sig=AXW5OLqgmO8b-pMcGAn7Pm4W1RpXPSSIGrj29QR1yqozxsWGJ4BUTYE_JSofnbH8WPHT-3G1Ru7WApYrEisN6HterHHk7aBZCNe5gIVtPgPFv-hHMPbg659U-RJzAFWv4RWnTr-YG6RmYWOtF4Y4HaxmjTLRCo0SwEDGz7pc987v_hWHNksxqyn539OAmIePV8p3z8_55vLmv9FF1umTE3WcXcR0IbEND9PHIhO6JBHBsakdJh6jvrkUkaFKUUV_7F_wOat-3eCc0ZxJoUS1dgZzA-FwVWeh5NtTuD4jkb9qdQDW4EscNJP0x73lViO3tiS_erKukwuwa9gOQa5gZ4PYBNl-mCX0_rMv9W56TLYipg76SAYPVqFsCnOWmHPrqUiPUk_eS6MGMdKM2XXG9ef1IJWkR9fa7PrKreVvGePPJ3KJ0Lnh1fagFrEGWx_sdWuk3EU4xi55oGEdLYaYRLpBT8DHFy2YvDIeyaDhVUL5yAUOvxSs0syZu4pJlyMUk72TR1k%3D&gclid=ADowPOJi2nXXmtT1V_K51Yc1rJPKczhOwmdhTePKHoqUsjqju0lC6vNQ-avxVQFCwZRu7baljCM_x47bncuHPLKpf7KaxUwR183tkQ9pZAypZn8sz1kX&gclsrc=gf",
+        "full_info": "Continue to book with wego for 4258 Philippine pesos"
+      }
+    ]
+  },
+  {
+    "airline": "Cebu Pacific",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+    "price": "₱4569",
+    "cabin": "Economy",
+    "duration": "2 hr 5 min",
+    "is_overnight": false,
+    "departure": {
+      "time": "2:05 AM",
+      "airport": "Davao International Airport (DVO)"
+    },
+    "landing": {
+      "time": "4:10 AM",
+      "airport": "Ninoy Aquino International Airport (MNL)"
+    },
+    "emissions": {
+      "amount": "72 kg CO2e",
+      "comparison": "-29% emissions",
+      "contrail": "Contrail warming potential: Medium"
+    },
+    "amenities": [
+      "Below average legroom (28 in)",
+      "In-seat USB outlet"
+    ],
+    "baggage": null,
+    "flight_info": [
+      "Airbus A321neo"
+    ],
+    "booking_options": [
+      {
+        "provider": "Cebu Pacific",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+        "url": "https://www.cebupacificair.com/en-PH/flight/select?dd1=2026-06-05&o1=DVO&d1=MNL&adt=1&chd=0&inf=0&inl=0&gclid=ADowPOLjEFDozWpyOEnDoelUAIz4vjU_Vb2eeAxMb7-qEmFzPSfBKPqonKY7km6-GW6nM9Puyh3xfhzLEt5UHN9tWk6CljeMQi2Q83ltdEtUkw2_K53R&gclsrc=gf",
+        "full_info": "Continue to book with Cebu Pacific airline for 4569 Philippine pesos"
+      },
+      {
+        "provider": "wego",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=www.wego.com&sz=64",
+        "url": "https://www.wego.com/flights/handoff?Adult=1&TripType=OneWay&PointOfSaleCountry=PH&DisplayedPrice=4478&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=AED&Slice1=1&Cabin1=Economy&Carrier1=5J&DepartureDate1=2026-06-05T02:05:00&ArrivalDate1=2026-06-05T04:10:00&Origin1=DVO&Destination1=MNL&FlightNumber1=968&TsCode=5aa90&app_client=roxana&ReferralId=GOOG_GFS_712&wg_source=meta_distribution&wg_medium=gfs&wg_campaign=fbl&t=1778999338&sig=AXW5OLonL0nALUElB1AbBf7KAiwmUe9YhMUVKhXYqF_wHp53bn1CyxhOhYAiLdnItUqsL8oinVeEyXVp3nAmNhvUHlEvy8TAPN7fvphXZli_BalmP0YsR11miAsCCZHc4psPcmnkhxD3s9vyqayFRWmzlzPNdjnzAZpu2_qUPJaY4CxxjfTy4t7vMlSWagTqbNXe-jHH1g7w3Ggfl-zNwdazw7DHyZ9Y4eSPvg-D1GTfS9kay6WwuB2GNf_DvUw_TNgbTIiZyGw5-BGI49j7rdZrWA_4ngu4PS7KjKo4_-ueRJDBSOdMMS4Ojw92QCwZ4O0UU9T0MajBcOVvIvddFUNm3SRs0taqWnrlVjj3EMbaHUohzyEX76_LzhvuQUDwZAHHf0qXzIPH1-Sryhc43sBCXc2SnW0KjA0eva5yTuWxanDXIvS2CEppbvb2UopfNFwJslsBxSXsn7tQ-8wLskONHLdFOS7AB3HtZnG9BsHcJoBr-uFk3uw3DpE-a5rpXGl9lWg%3D&gclid=ADowPOI8gw3vGqQC_7NMttllVwrmGvN16LKitH5vg0zxeFdMOFz5Si1pTgUxWcHqQz1VmcgGxD6nwF3rqx7ozji3CcSK9XIuayL1xmD0wCaWLOlp13Wm&gclsrc=gf",
+        "full_info": "Continue to book with wego for 4478 Philippine pesos"
+      }
+    ]
+  },
+  {
+    "airline": "Cebu Pacific",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+    "price": "₱4569",
+    "cabin": "Economy",
+    "duration": "2 hr 5 min",
+    "is_overnight": false,
+    "departure": {
+      "time": "11:30 AM",
+      "airport": "Davao International Airport (DVO)"
+    },
+    "landing": {
+      "time": "1:35 PM",
+      "airport": "Ninoy Aquino International Airport (MNL)"
+    },
+    "emissions": {
+      "amount": "72 kg CO2e",
+      "comparison": "-29% emissions",
+      "contrail": "Contrail warming potential: Low"
+    },
+    "amenities": [
+      "Below average legroom (28 in)",
+      "In-seat USB outlet"
+    ],
+    "baggage": null,
+    "flight_info": [
+      "Airbus A321neo"
+    ],
+    "booking_options": [
+      {
+        "provider": "Cebu Pacific",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+        "url": "https://www.cebupacificair.com/en-PH/flight/select?dd1=2026-06-05&o1=DVO&d1=MNL&adt=1&chd=0&inf=0&inl=0&gclid=ADowPOJLosZIMfwx6wEUJVqGAsAQcAl4lzldHsi5BxMop7BiAx5hrwWq1fejbpXsFoDZjj7shjN44eAq79TOg-aftrsdUf6zJUREd6VSN4mlW_XZioJp&gclsrc=gf",
+        "full_info": "Continue to book with Cebu Pacific airline for 4569 Philippine pesos"
+      },
+      {
+        "provider": "wego",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=www.wego.com&sz=64",
+        "url": "https://www.wego.com/flights/handoff?Adult=1&TripType=OneWay&PointOfSaleCountry=PH&DisplayedPrice=4478&DisplayedPriceCurrency=PHP&UserLanguage=en&UserCurrency=AED&Slice1=1&Cabin1=Economy&Carrier1=5J&DepartureDate1=2026-06-05T11:30:00&ArrivalDate1=2026-06-05T13:35:00&Origin1=DVO&Destination1=MNL&FlightNumber1=964&TsCode=5aa90&app_client=roxana&ReferralId=GOOG_GFS_712&wg_source=meta_distribution&wg_medium=gfs&wg_campaign=fbl&t=1778999336&sig=AXW5OLpsjdohOTHdJA13dE_tP_lur3PpDYX5iR3pLN_nNswoaTDtC_6Iq-nxdDKFQ79BGG-sK48Vzlh_05V7n-GD1FpP2ZZS9Qm189dHuVd5xKoVSjudPwUQjl-H22SNgDnxyTWlMsdU1TG2YqU4B-4cfdICI2sWpIlcwwxU5xoVrpjq5LQIvXcRZ7IHok3fYL3vTFeWLW3l_HZQWtrxZ3OojCTppvAFL9zSiX8rh_imfgfhd7XJxoovhsgcanB3zLACZXKzR0r2Rwy54sCxEj5xSj5911nqLHfzbd1pyQMFBEsL9UDQaRc4j_fVQAK7IiXCm37MtEigqAvmietTbPzmRlQ_FkRcdfqfzUcpp-lj2lUo7xUCWSXtZ3fuyg_l9NlrTUz8kSljmAGny9ogOPpSRQ_gNZfJNBBKtAQphT_dyFaA0AZ0CiHD_svf22eaHxkE2wOXFNvwraPsebxEy_UVqJx05HTYB3xD69vuQjgq1LpSbXC0mlKJkJm8H2yGEtxLvJM%3D&gclid=ADowPOKPl2xjXdgk6hLzONkGzTw6xTtQWYaHuXxwq0RYCcfjMvulUD40MITmWqfknJCLuQp6_uddI85wsfEI70_MIrTgPruTsIYKbTPuL8RyRYV1C0y2&gclsrc=gf",
+        "full_info": "Continue to book with wego for 4478 Philippine pesos"
+      }
+    ]
+  },
+  {
+    "airline": "Cebu Pacific",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+    "price": "₱4569",
+    "cabin": "Economy",
+    "duration": "2 hr 5 min",
+    "is_overnight": false,
+    "departure": {
+      "time": "8:45 PM",
+      "airport": "Davao International Airport (DVO)"
+    },
+    "landing": {
+      "time": "10:50 PM",
+      "airport": "Ninoy Aquino International Airport (MNL)"
+    },
+    "emissions": {
+      "amount": "72 kg CO2e",
+      "comparison": "-29% emissions",
+      "contrail": "Contrail warming potential: Medium"
+    },
+    "amenities": [
+      "Below average legroom (28 in)",
+      "In-seat USB outlet"
+    ],
+    "baggage": null,
+    "flight_info": [
+      "Airbus A321neo"
+    ],
+    "booking_options": [
+      {
+        "provider": "Cebu Pacific",
+        "provider_logo": "https://www.gstatic.com/flights/airline_logos/70px/5J.png",
+        "url": "https://www.cebupacificair.com/en-PH/flight/select?dd1=2026-06-05&o1=DVO&d1=MNL&adt=1&chd=0&inf=0&inl=0&gclid=ADowPOJMxtR1ERuyXiAJsesxydQlMO9F2vHM40xT15dLNo_AKOLj6RzkI1wTg3BRuE-H_SSftxAxPWNTLZFpRczZwstnNriZDukK0UR9MjhndiunfYQr&gclsrc=gf",
+        "full_info": "Continue to book with Cebu Pacific airline for 4569 Philippine pesos"
+      },
+      {
+        "provider": "wego",
+        "provider_logo": "https://www.google.com/s2/favicons?domain=www.wego.com.ph&sz=64",
+        "url": "https://www.wego.com.ph/flights/searches/DVO-MNL-2026-06-05/economy/1a:0c:0i/8e22e38d98f8977emsr:5J974~5~2045~2250/8e22e38d98f8977emsr:handoff_wego_com:d6351d072b347f4e:ss?currency_code=PHP&placement_type=integrated_booking&ulang=en&gclid=ADowPOJ5anWYpmlax0wOvmsOBmHbJH9_NTaxNT6kFNbFduircEVy7qTPVDnRj8hThxtnFIoyH8L5QPxVss5IeL8f612-jbgqcLfZNL6r4DCT0Hhq69Jy&gclsrc=gf&ts_code=5aa90&bow_only=true&app_client=roxana",
+        "full_info": "Continue to book with wego for 4478 Philippine pesos"
       }
     ]
   }
