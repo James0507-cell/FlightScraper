@@ -59,11 +59,15 @@ async def get_valid_cards(page):
     cards = page.locator(CARD_SELECTOR)
     count = await cards.count()
     valid_cards = []
-    for i in range(count):
+    # Only check the first 30 cards to avoid timeouts
+    for i in range(min(count, 30)):
         card = cards.nth(i)
-        label = await card.get_attribute('aria-label')
-        if label and label.strip() != "Select flight" and len(label) > 50:
-            valid_cards.append(card)
+        try:
+            label = await card.get_attribute('aria-label', timeout=2000)
+            if label and label.strip() != "Select flight" and len(label) > 50:
+                valid_cards.append(card)
+        except Exception:
+            continue
     return valid_cards
 
 async def reveal_booking_options(page, card, attempts=3):
@@ -123,6 +127,8 @@ def append_unique(target_list, value):
     if cleaned and cleaned not in target_list:
         target_list.append(cleaned)
 
+import argparse
+
 async def process_flight(context, search_url, index, semaphore):
     """
     Processes a single flight entry: expands details, extracts rich data, logos, and gets booking links.
@@ -130,24 +136,28 @@ async def process_flight(context, search_url, index, semaphore):
     async with semaphore:
         page = await context.new_page()
         try:
-            log_message(f"  [Task {index+1}] Starting deep scrape...")
+            log_message(f"  [Task {index+1}] Navigating...")
             await goto_flights_results(page, search_url)
+            
             valid_cards = await get_valid_cards(page)
             
             if index >= len(valid_cards):
+                log_message(f"  [Task {index+1}] Card index {index} not found in {len(valid_cards)} valid cards.")
                 return None
             
             card = valid_cards[index]
-            raw_aria_label = await card.get_attribute('aria-label') or ""
+            raw_aria_label = await card.get_attribute('aria-label', timeout=5000) or ""
             aria_label = clean_text(raw_aria_label)
+            log_message(f"  [Task {index+1}] Found card: {aria_label[:50]}...")
+
             container = card.locator(
                 "xpath=ancestor::*[@role='listitem' or self::li or contains(@class, 'pI9V6b')][1]"
             ).first
             
-            # Extract Airline Logo with improved selector (Avoid generic arrow images)
+            # Extract Airline Logo
             airline_logo_url = await card.evaluate("""el => {
                 const container = el.closest('li, [role="listitem"], .pI9V6b');
-                // Look for airline logos specifically (usually in a div with a specific class or background)
+                if (!container) return null;
                 const logos = container.querySelectorAll('div[style*="image"], img');
                 for (const logo of logos) {
                     let src = null;
@@ -158,7 +168,6 @@ async def process_flight(context, search_url, index, semaphore):
                         const match = style.match(/url\\((.*?)\\)/);
                         if (match) src = match[1].replace(/['"]/g, '');
                     }
-                    // Filter out Google's UI icons like arrows or info buttons
                     if (src && !src.includes('arrow') && !src.includes('info') && !src.includes('battery')) {
                         return src;
                     }
@@ -167,11 +176,15 @@ async def process_flight(context, search_url, index, semaphore):
             }""")
 
             # Expand details
-            details_btn = container.locator('button[aria-label^="Flight details"]').first
-            if await details_btn.count():
-                await click_locator(details_btn, timeout=10000)
-                await details_btn.wait_for(state="attached", timeout=5000)
-                await page.wait_for_timeout(1500)
+            expand_btn = container.locator('button[aria-label*="Flight details"], button[aria-label*="Expand"]').first
+            if await expand_btn.count():
+                log_message(f"  [Task {index+1}] Expanding flight details...")
+                await expand_btn.evaluate("el => el.click()")
+                await page.wait_for_timeout(2000)
+            else:
+                log_message(f"  [Task {index+1}] No expand button found, clicking card...")
+                await card.evaluate("el => el.click()")
+                await page.wait_for_timeout(2000)
             
             # Extract text
             raw_container_text = await container.evaluate("el => el.innerText")
@@ -180,13 +193,15 @@ async def process_flight(context, search_url, index, semaphore):
             full_text = clean_text(raw_container_text)
             
             flight_data = {
-                "airline": "Unknown",
+                "airline": None,
                 "airline_logo": airline_logo_url,
-                "price": "Unknown",
-                "duration": "Unknown",
-                "departure": {"time": "Unknown", "airport": "Unknown"},
-                "landing": {"time": "Unknown", "airport": "Unknown"},
-                "emissions": {"amount": "Not available", "comparison": "Typical", "contrail": "Not available"},
+                "price": None,
+                "cabin": None,
+                "duration": None,
+                "is_overnight": False,
+                "departure": {"time": None, "airport": None},
+                "landing": {"time": None, "airport": None},
+                "emissions": {"amount": None, "comparison": None, "contrail": None},
                 "amenities": [],
                 "baggage": [],
                 "flight_info": [],
@@ -212,20 +227,36 @@ async def process_flight(context, search_url, index, semaphore):
             duration_match = re.search(r'duration (.*?)\.', aria_label)
             if duration_match: flight_data["duration"] = duration_match.group(1)
 
+            # Overnight check: Look for "+1" or "arrives ... next day" in aria-label or full text
+            if "+1" in aria_label or "+1" in full_text or "next day" in full_text.lower():
+                flight_data["is_overnight"] = True
+
+            # Cabin parsing
+            for cabin_type in ["Economy", "Premium Economy", "Business", "First"]:
+                if cabin_type in full_text:
+                    flight_data["cabin"] = cabin_type
+                    break
+
             # Location and Time Extraction
-            time_pattern = r'^(\d{1,2}:\d{2}\s?(?:AM|PM))\s*(.*)'
+            time_pattern = r'(\d{1,2}:\d{2}\s?(?:AM|PM))\s*(.*)'
             found_locations = []
             for line in lines:
-                match = re.match(time_pattern, line, re.I)
+                match = re.search(time_pattern, line, re.I)
                 if match:
+                    # Clean up the location text - often it has junk like "7:05 AM on Mon, Jun 1"
+                    loc_text = match.group(2).strip()
+                    loc_text = re.sub(r'on\s+[A-Z][a-z]{2},\s+[A-Z][a-z]{2}\s+\d+', '', loc_text).strip()
                     found_locations.append({
                         "time": match.group(1).strip(),
-                        "airport": match.group(2).strip()
+                        "airport": loc_text
                     })
             
             if len(found_locations) >= 2:
+                # First is departure, last is landing (to handle layovers)
                 flight_data["departure"] = found_locations[0]
-                flight_data["landing"] = found_locations[1]
+                flight_data["landing"] = found_locations[-1]
+            
+            # Fallback for locations if empty
             if not flight_data["departure"]["airport"] or not flight_data["landing"]["airport"]:
                 journey_match = re.search(
                     r'Leaves (.*?) at (\d{1,2}:\d{2}\s?(?:AM|PM)).*?arrives at (.*?) at (\d{1,2}:\d{2}\s?(?:AM|PM))',
@@ -233,41 +264,77 @@ async def process_flight(context, search_url, index, semaphore):
                     re.I,
                 )
                 if journey_match:
-                    flight_data["departure"] = {
-                        "time": journey_match.group(2).strip(),
-                        "airport": journey_match.group(1).strip(),
-                    }
-                    flight_data["landing"] = {
-                        "time": journey_match.group(4).strip(),
-                        "airport": journey_match.group(3).strip(),
-                    }
+                    if not flight_data["departure"]["time"]: flight_data["departure"]["time"] = journey_match.group(2).strip()
+                    if not flight_data["departure"]["airport"]: flight_data["departure"]["airport"] = journey_match.group(1).strip()
+                    if not flight_data["landing"]["time"]: flight_data["landing"]["time"] = journey_match.group(4).strip()
+                    if not flight_data["landing"]["airport"]: flight_data["landing"]["airport"] = journey_match.group(3).strip()
 
             # Dynamic classification
-            for line in lines:
+            for i, line in enumerate(lines):
                 low_line = line.lower()
-                if "co2e" in line and "estimate" in low_line: flight_data["emissions"]["amount"] = line.split(':')[-1].strip()
-                elif "emissions" in low_line and ("%" in line or "avg" in line): flight_data["emissions"]["comparison"] = line
-                elif "contrail" in low_line: flight_data["emissions"]["contrail"] = line
-                elif any(kw in low_line for kw in ["legroom", "wi-fi", "outlet", "usb", "entertainment", "stream"]):
+                
+                # Filter out very long lines that are likely UI blocks
+                if len(line) > 150:
+                    continue
+
+                # Emissions
+                if "co2e" in low_line:
+                    amount_match = re.search(r'(\d+)\s*kg\s*co2e', line, re.I)
+                    if amount_match:
+                        flight_data["emissions"]["amount"] = amount_match.group(0)
+                    elif i > 0 and "emissions" in lines[i-1].lower():
+                         flight_data["emissions"]["amount"] = line
+                
+                if "emissions" in low_line and ("%" in line or "avg" in line or "typical" in low_line):
+                    flight_data["emissions"]["comparison"] = line
+                elif "contrail" in low_line:
+                    flight_data["emissions"]["contrail"] = line
+                
+                # Amenities - expanded list
+                amenity_keywords = [
+                    "legroom", "wi-fi", "outlet", "usb", "entertainment", 
+                    "stream", "on-demand video", "power", "seatback"
+                ]
+                if any(kw in low_line for kw in amenity_keywords):
                     append_unique(flight_data["amenities"], line)
-                elif "bag" in low_line and ("fee" in low_line or "included" in low_line) and "fare" not in low_line and "ticket" not in low_line:
-                    append_unique(flight_data["baggage"], line)
-                elif re.search(r'^(?:[A-Z0-9]{2}\s?\d{2,4}|(?:Airbus|Boeing|Embraer)\b)', line):
-                    append_unique(flight_data["flight_info"], line)
+                
+                # Baggage - capture actual descriptive text
+                if "bag" in low_line and ("fee" in low_line or "included" in low_line or "access" in low_line):
+                    # Filter out noise like "If you need a carry-on bag, use the Bags filter"
+                    if "filter" not in low_line and "update prices" not in low_line and "Departure" not in line:
+                        append_unique(flight_data["baggage"], line)
+                
+                # Flight Info
+                if re.search(r'^(?:[A-Z0-9]{2}\s?\d{2,4}|(?:Airbus|Boeing|Embraer)\b)', line):
+                    # Avoid adding common noise
+                    if len(line) > 3 and "Departure" not in line:
+                        append_unique(flight_data["flight_info"], line)
 
-            for match in re.findall(
-                r'(Below average legroom \(\d+\s*in\)|Average legroom \(\d+\s*in\)|Above average legroom \(\d+\s*in\)|Wi-?Fi(?: for a fee)?|In-seat (?:USB )?outlet|Power outlet|USB outlet|Seatback entertainment|Stream media to your device)',
-                full_text,
-                re.I,
-            ):
-                append_unique(flight_data["amenities"], match)
+            # Global regex fallbacks
+            amenity_patterns = [
+                r'.*?legroom\s*\(\d+\s*in\)',
+                r'Wi-?Fi(?: for a fee| included)?',
+                r'.*?USB outlet',
+                r'.*?Power outlet',
+                r'On-demand video',
+                r'Seatback entertainment',
+                r'Stream media to your device'
+            ]
+            for pat in amenity_patterns:
+                for match in re.findall(pat, full_text, re.I):
+                    if len(match) < 150:
+                        append_unique(flight_data["amenities"], match)
 
-            for match in re.findall(
-                r'(Checked baggage(?: for a fee| included)?|Carry-on bag(?: for a fee| included)?|This price does not include overhead bin access|Overhead bin access(?: for a fee| included)?)',
-                full_text,
-                re.I,
-            ):
-                append_unique(flight_data["baggage"], match)
+            baggage_patterns = [
+                r'Checked baggage(?: for a fee| included)?',
+                r'Carry-on bag(?: for a fee| included)?',
+                r'Overhead bin access(?: for a fee| included)?',
+                r'This price does not include overhead bin access'
+            ]
+            for pat in baggage_patterns:
+                for match in re.findall(pat, full_text, re.I):
+                    if "Departure" not in match and "Select" not in match:
+                        append_unique(flight_data["baggage"], match)
 
             aircraft_match = re.search(
                 r'(Airbus\s+A\d{3}(?:neo)?|Boeing\s+\d{3}(?:-\d{3})?|Embraer\s+E?\d{3})',
@@ -277,8 +344,11 @@ async def process_flight(context, search_url, index, semaphore):
             if aircraft_match:
                 append_unique(flight_data["flight_info"], aircraft_match.group(1))
 
-            for match in re.findall(r'\b([A-Z0-9]{2}\s?\d{2,4})\b', full_text):
-                append_unique(flight_data["flight_info"], match)
+            # Improved flight number regex: 2 chars + space? + 1-4 digits
+            # We filter this to ensure it looks like a real flight number (e.g., SK 802)
+            for match in re.findall(r'\b([A-Z][A-Z0-9]\s?\d{1,4})\b', full_text):
+                if match not in ["CO2", "LHR", "JFK", "CDG", "LGW"]: # Filter obvious airport codes
+                    append_unique(flight_data["flight_info"], match)
 
             # 5. Booking details and provider logos
             await reveal_booking_options(page, card)
@@ -342,7 +412,7 @@ async def process_flight(context, search_url, index, semaphore):
                 except Exception:
                     redirect_url = "Dynamic - Check details"
                 
-                p_name = "Unknown"
+                p_name = None
                 if 'with ' in p_label:
                     p_name = p_label.split('with ')[1].split(' airline')[0].split(' for')[0]
 
@@ -359,10 +429,20 @@ async def process_flight(context, search_url, index, semaphore):
                     "full_info": p_label
                 })
 
+            # Final cleanup: if lists are empty, keep them as None.
+            if not flight_data["amenities"]: flight_data["amenities"] = None
+            if not flight_data["baggage"]: flight_data["baggage"] = None
+            if not flight_data["flight_info"]: flight_data["flight_info"] = None
+            if not flight_data["booking_options"]: flight_data["booking_options"] = None
+
             log_message(f"  [Task {index+1}] Completed: {flight_data['airline']} ({flight_data['price']})")
             return flight_data
         except Exception as e:
             log_message(f"  [Task {index+1}] Failed: {str(e)[:100]}")
+            try:
+                await page.screenshot(path=f"error_task_{index+1}.png")
+            except:
+                pass
             return None
         finally:
             await page.close()
@@ -372,7 +452,7 @@ async def scrape_google_flights(origin, destination, date, flight_type='oneway',
     Main entry point for concurrent Google Flights scraping.
     """
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
+        browser = await p.chromium.launch(headless=False)
         context = await browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         )
@@ -382,12 +462,12 @@ async def scrape_google_flights(origin, destination, date, flight_type='oneway',
         
         log_message(f"Navigating to {search_url}...")
         main_page = await context.new_page()
-        await goto_flights_results(main_page, search_url)
-        
         try:
+            await goto_flights_results(main_page, search_url)
             valid_cards = await get_valid_cards(main_page)
-        except Exception:
-            log_message("No results found.")
+        except Exception as e:
+            log_message(f"Initial navigation failed: {e}")
+            await main_page.screenshot(path="navigation_error.png")
             await browser.close()
             return []
 
@@ -407,11 +487,22 @@ async def scrape_google_flights(origin, destination, date, flight_type='oneway',
         return results
 
 if __name__ == "__main__":
-    origin = "LON"
-    destination = "PAR"
-    date = "2026-06-01"
+    parser = argparse.ArgumentParser(description="Google Flights Scraper")
+    parser.add_argument("--origin", default="LON", help="Origin airport code")
+    parser.add_argument("--dest", default="PAR", help="Destination airport code")
+    parser.add_argument("--date", default="2026-06-01", help="Date in YYYY-MM-DD")
+    parser.add_argument("--type", default="oneway", help="Flight type (oneway/roundtrip)")
+    parser.add_argument("--limit", type=int, default=5, help="Max flights to scrape")
+    parser.add_argument("--concurrency", type=int, default=2, help="Max concurrent tasks")
     
-    data = asyncio.run(scrape_google_flights(origin, destination, date, concurrency=5, limit=10))
+    args = parser.parse_args()
+    
+    data = asyncio.run(scrape_google_flights(
+        args.origin, args.dest, args.date, 
+        flight_type=args.type, 
+        concurrency=args.concurrency, 
+        limit=args.limit
+    ))
     
     output_file = "flights.json"
     with open(output_file, "w", encoding="utf-8") as f:
