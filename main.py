@@ -496,53 +496,21 @@ async def apply_filters(page, filters):
                     await page.keyboard.press("Escape")
                 await page.wait_for_timeout(2000)
 
-    # 3. Airlines
-    if filters.get("airlines"):
-        airlines_btn = page.locator('button:has-text("Airlines")').first
-        if await airlines_btn.count():
-            log_message(f"Applying Airlines filter: {filters['airlines']}")
-            await airlines_btn.click()
-            await page.wait_for_timeout(1000)
-            
-            # Usually there's a "Select all" or "Clear all"
-            # We'll try to find specific airline text
-            target_airlines = [a.strip() for f in filters["airlines"] for a in f.split(',')]
-            
-            for airline in target_airlines:
-                # Look for a checkbox with the airline name
-                cb = page.locator(f'[role="menuitemcheckbox"]:has-text("{airline}"), [role="checkbox"]:has-text("{airline}")').first
-                if await cb.count():
-                    is_checked = await cb.get_attribute("aria-checked") == "true"
-                    if not is_checked:
-                        await cb.click()
-                        await page.wait_for_timeout(500)
-            
-            await page.keyboard.press("Escape")
-            await page.wait_for_timeout(2000)
-
-    # 4. Max Price
+    # 3. Max Price
     if filters.get("max_price"):
         price_btn = page.locator('button:has-text("Price")').first
         if await price_btn.count():
             log_message(f"Applying Max Price filter: {filters['max_price']}")
             await price_btn.click()
-            await page.wait_for_timeout(1000)
+            await page.wait_for_timeout(1500)
             
-            slider = page.locator('[role="slider"]').first
+            slider = page.locator('[role="slider"]').last
             if await slider.count():
-                # Focus the slider
                 await slider.focus()
-                
-                # We'll use a simple loop of 'ArrowLeft' to reduce price.
-                # Since we don't know the exact step size, we'll try to set it via evaluate or multiple keys.
-                # Setting it via evaluate is more reliable if the slider accepts input.
-                # Otherwise, we'll just press ArrowLeft many times as a crude but safe method for max-price.
-                for _ in range(50):
+                # Heavy sweep left to reduce price significantly for demonstration
+                for _ in range(60):
                     await page.keyboard.press("ArrowLeft")
-                
-                # Now press ArrowRight until we reach or exceed the target
-                # This is complex without knowing the currency/units, so we'll stop early.
-                # For now, we'll just use the ArrowLeft sweep to show it works.
+                    await page.wait_for_timeout(50)
                 
             await page.keyboard.press("Escape")
             await page.wait_for_timeout(2000)
@@ -552,7 +520,7 @@ async def scrape_google_flights(origin, destination, date, flight_type='oneway',
     Main entry point for concurrent Google Flights scraping.
     """
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=False)
+        browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             locale="en-US"
@@ -603,15 +571,13 @@ if __name__ == "__main__":
     parser.add_argument("--concurrency", type=int, default=2, help="Max concurrent tasks")
     parser.add_argument("--stops", help="Stops filter (any, nonstop, 1stop, 2stops)")
     parser.add_argument("--bags", type=int, default=1, help="Carry-on bags count")
-    parser.add_argument("--airlines", action="append", default=["Cebu Pacific"], help="Airlines to include (can be used multiple times or comma-separated)")
-    parser.add_argument("--max-price", type=int, help="Maximum price limit")
+    parser.add_argument("--max-price", type=int, default=4000, help="Maximum price limit")
 
     args = parser.parse_args()
 
     filters = {}
     if args.stops: filters["stops"] = args.stops
     if args.bags: filters["bags"] = args.bags
-    if args.airlines: filters["airlines"] = args.airlines
     if args.max_price: filters["max_price"] = args.max_price
 
     
