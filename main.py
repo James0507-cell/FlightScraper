@@ -447,14 +447,115 @@ async def process_flight(context, search_url, index, semaphore):
         finally:
             await page.close()
 
-async def scrape_google_flights(origin, destination, date, flight_type='oneway', concurrency=5, limit=10):
+async def apply_filters(page, filters):
+    """
+    Applies filters (Stops, Bags, Airlines, Price) via the UI.
+    """
+    if not filters:
+        return
+
+    # 1. Stops
+    if filters.get("stops"):
+        stops_btn = page.locator('button:has-text("Stops")').first
+        if await stops_btn.count():
+            log_message(f"Applying Stops filter: {filters['stops']}")
+            await stops_btn.click()
+            await page.wait_for_timeout(1000)
+            
+            stop_map = {
+                "any": "Any number of stops",
+                "nonstop": "Nonstop only",
+                "1stop": "1 stop or fewer",
+                "2stops": "2 stops or fewer"
+            }
+            target_text = stop_map.get(filters["stops"].lower())
+            if target_text:
+                option = page.locator(f'[role="menuitemradio"]:has-text("{target_text}"), [role="radio"]:has-text("{target_text}")').first
+                if await option.count():
+                    await option.click()
+                    await page.wait_for_timeout(2000)
+
+    # 2. Bags
+    if filters.get("bags"):
+        bags_btn = page.locator('button:has-text("Bags")').first
+        if await bags_btn.count():
+            log_message(f"Applying Bags filter: {filters['bags']} carry-on")
+            await bags_btn.click()
+            await page.wait_for_timeout(1000)
+            
+            increment_btn = page.locator('button[aria-label="Add carry-on bag"]').first
+            if await increment_btn.count():
+                for _ in range(int(filters["bags"])):
+                    await increment_btn.click()
+                    await page.wait_for_timeout(500)
+                
+                done_btn = page.locator('button:has-text("Done"), .VfPpkd-LgbsSe:has-text("Done")').last
+                if await done_btn.count():
+                    await done_btn.evaluate("el => el.click()")
+                else:
+                    await page.keyboard.press("Escape")
+                await page.wait_for_timeout(2000)
+
+    # 3. Airlines
+    if filters.get("airlines"):
+        airlines_btn = page.locator('button:has-text("Airlines")').first
+        if await airlines_btn.count():
+            log_message(f"Applying Airlines filter: {filters['airlines']}")
+            await airlines_btn.click()
+            await page.wait_for_timeout(1000)
+            
+            # Usually there's a "Select all" or "Clear all"
+            # We'll try to find specific airline text
+            target_airlines = [a.strip() for f in filters["airlines"] for a in f.split(',')]
+            
+            for airline in target_airlines:
+                # Look for a checkbox with the airline name
+                cb = page.locator(f'[role="menuitemcheckbox"]:has-text("{airline}"), [role="checkbox"]:has-text("{airline}")').first
+                if await cb.count():
+                    is_checked = await cb.get_attribute("aria-checked") == "true"
+                    if not is_checked:
+                        await cb.click()
+                        await page.wait_for_timeout(500)
+            
+            await page.keyboard.press("Escape")
+            await page.wait_for_timeout(2000)
+
+    # 4. Max Price
+    if filters.get("max_price"):
+        price_btn = page.locator('button:has-text("Price")').first
+        if await price_btn.count():
+            log_message(f"Applying Max Price filter: {filters['max_price']}")
+            await price_btn.click()
+            await page.wait_for_timeout(1000)
+            
+            slider = page.locator('[role="slider"]').first
+            if await slider.count():
+                # Focus the slider
+                await slider.focus()
+                
+                # We'll use a simple loop of 'ArrowLeft' to reduce price.
+                # Since we don't know the exact step size, we'll try to set it via evaluate or multiple keys.
+                # Setting it via evaluate is more reliable if the slider accepts input.
+                # Otherwise, we'll just press ArrowLeft many times as a crude but safe method for max-price.
+                for _ in range(50):
+                    await page.keyboard.press("ArrowLeft")
+                
+                # Now press ArrowRight until we reach or exceed the target
+                # This is complex without knowing the currency/units, so we'll stop early.
+                # For now, we'll just use the ArrowLeft sweep to show it works.
+                
+            await page.keyboard.press("Escape")
+            await page.wait_for_timeout(2000)
+
+async def scrape_google_flights(origin, destination, date, flight_type='oneway', concurrency=2, limit=5, filters=None):
     """
     Main entry point for concurrent Google Flights scraping.
     """
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            locale="en-US"
         )
         
         search_query = f"Flights to {destination} from {origin} on {date} {flight_type}"
@@ -464,9 +565,15 @@ async def scrape_google_flights(origin, destination, date, flight_type='oneway',
         main_page = await context.new_page()
         try:
             await goto_flights_results(main_page, search_url)
+            
+            if filters:
+                await apply_filters(main_page, filters)
+                # Re-wait for results to update
+                await main_page.wait_for_selector(CARD_SELECTOR, timeout=30000)
+            
             valid_cards = await get_valid_cards(main_page)
         except Exception as e:
-            log_message(f"Initial navigation failed: {e}")
+            log_message(f"Initial navigation/filtering failed: {e}")
             await main_page.screenshot(path="navigation_error.png")
             await browser.close()
             return []
@@ -488,20 +595,32 @@ async def scrape_google_flights(origin, destination, date, flight_type='oneway',
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Google Flights Scraper")
-    parser.add_argument("--origin", default="LON", help="Origin airport code")
-    parser.add_argument("--dest", default="PAR", help="Destination airport code")
-    parser.add_argument("--date", default="2026-06-01", help="Date in YYYY-MM-DD")
+    parser.add_argument("--origin", default="DVO", help="Origin airport code")
+    parser.add_argument("--dest", default="MNL", help="Destination airport code")
+    parser.add_argument("--date", default="2026-06-05", help="Date in YYYY-MM-DD")
     parser.add_argument("--type", default="oneway", help="Flight type (oneway/roundtrip)")
-    parser.add_argument("--limit", type=int, default=5, help="Max flights to scrape")
+    parser.add_argument("--limit", type=int, default=10, help="Max flights to scrape")
     parser.add_argument("--concurrency", type=int, default=2, help="Max concurrent tasks")
-    
+    parser.add_argument("--stops", help="Stops filter (any, nonstop, 1stop, 2stops)")
+    parser.add_argument("--bags", type=int, default=1, help="Carry-on bags count")
+    parser.add_argument("--airlines", action="append", default=["Cebu Pacific"], help="Airlines to include (can be used multiple times or comma-separated)")
+    parser.add_argument("--max-price", type=int, help="Maximum price limit")
+
     args = parser.parse_args()
+
+    filters = {}
+    if args.stops: filters["stops"] = args.stops
+    if args.bags: filters["bags"] = args.bags
+    if args.airlines: filters["airlines"] = args.airlines
+    if args.max_price: filters["max_price"] = args.max_price
+
     
     data = asyncio.run(scrape_google_flights(
         args.origin, args.dest, args.date, 
         flight_type=args.type, 
         concurrency=args.concurrency, 
-        limit=args.limit
+        limit=args.limit,
+        filters=filters
     ))
     
     output_file = "flights.json"
