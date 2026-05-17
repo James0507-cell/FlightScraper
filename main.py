@@ -558,6 +558,7 @@ async def scrape_google_flights(origin, destination, date, flight_type='oneway',
         results = await asyncio.gather(*tasks)
         results = [r for r in results if r is not None]
         
+        await context.close()
         await browser.close()
         return results
 
